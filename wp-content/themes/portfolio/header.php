@@ -71,9 +71,9 @@
 			<?php $logotext = yer_get_option("sitelogo"); ?>
 			<div id="logo">
 			<?php if ($logotext) { ?>
-				<a href="" title="Response"><?php echo $logotext; ?></a> 
+				<a href="<?php home_url(); ?>/" title="Response"><?php echo $logotext; ?></a> 
 			<?php } else { ?>
-				<a href="" title="Response">Yoeri Stessens</a> 
+				<a href="<?php home_url(); ?>/" title="Response">Yoeri Stessens</a> 
 			<?php } ?>
 			</div>
 			<!-- End Logo area -->

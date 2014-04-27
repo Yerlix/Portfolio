@@ -21,7 +21,7 @@ get_header();
     </div>
     <!-- End H1 Title -->
     
-    <?php get_template_part( 'content', 'index' ); ?>
+    <?php get_template_part( 'content', 'home' ); ?>
 
 </div>
 
