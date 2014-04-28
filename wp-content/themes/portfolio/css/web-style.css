@@ -450,7 +450,9 @@ hr{
 	display:inline !important;
 }
 .nivo-html-caption {
-    display:none;
+    /*display:none;*/
+    margin-top: 0.5em;
+    text-align: left !important;
 }
 /* Direction nav styles (e.g. Next & Prev) */
 .nivo-directionNav a {
@@ -573,7 +575,7 @@ hr{
 	width:48%;
 	height:auto;
 	float:left;
-	margin:15px 1%;
+	margin:15px;
 	border:1px solid #d5d5d5;
 	text-align:center;
 	position:relative;
@@ -625,6 +627,10 @@ hr{
 	margin-left:2%;
 }
 
+.boxes-half-last{
+	margin-right:0%;
+	margin-left:1.6%;
+}
 
 /* Featured Section*/
 .bti{
