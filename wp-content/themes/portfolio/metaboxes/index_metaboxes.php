@@ -124,7 +124,7 @@ function create_home_metaboxes(){
 	    'autosave' => true,
 		'fields' => array(
 			array(
-				'id'		=> "{$prefix}abouttitle",
+				'id'		=> "{$prefix}linktitle",
 				'name'	=> __( "Title", 'rwmb' ),
 				'type'	=> "text",
 				),
