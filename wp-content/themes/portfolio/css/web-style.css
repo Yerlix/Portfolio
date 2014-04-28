@@ -575,10 +575,11 @@ hr{
 	width:48%;
 	height:auto;
 	float:left;
-	margin:15px;
+	margin-top:15px;
 	border:1px solid #d5d5d5;
 	text-align:center;
 	position:relative;
+	min-height: 142px;
 }
 
 /* 3rd width*/
@@ -591,6 +592,20 @@ hr{
 	border:1px solid #d5d5d5;
 	text-align:center;
 	position:relative;
+	min-height: 142px;
+}
+
+/* 3/4rd width*/
+.boxes-three-four{
+	background-color:white;
+	width:66.5%;
+	height:100%;
+	float:left;
+	margin:15px 0;
+	border:1px solid #d5d5d5;
+	text-align:center;
+	position:relative;
+	min-height: 142px;
 }
 
 .boxes-padding{

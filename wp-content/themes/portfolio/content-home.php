@@ -18,7 +18,7 @@
         
         </div>
         
-        <div class="boxes-third">
+        <div class="boxes-three-four">
         
             <div class="boxes-padding">
             
@@ -34,7 +34,7 @@
         
         </div>
         
-        <div class="boxes-third boxes-last">
+        <div class="boxes-third boxes-first">
         
             <div class="boxes-padding">
                 
@@ -54,7 +54,9 @@
         <!-- Start Latest Project titles -->
         <div class="boxes-full">
         
-            <div class="boxes-padding fullpadding"><h1>Useful links</h1></div>
+            <div class="boxes-padding fullpadding">
+                <h1><?php if (yer_get_meta('linktitle')) { echo yer_get_meta('linktitle'); } else { echo "Nuttige links" ; } ?></h1>
+            </div>
             
             <span class="box-arrow"></span>
         
@@ -70,7 +72,7 @@
             </div>
             <div class="portfolioimage">
                 <a href="" rel="prettyPhoto" title="Lorem ipsum dolor sit amet">
-                    <img src="<?php echo THEME_URL; ?>/images/latest-projects/project01.jpg" alt="Lorem ipsum dolor sit amet"/>
+                    <img src="http://www.nuttyart.co.uk/Workings/Pet-Portraits-by-Nutty-Contact-Me.jpg" alt="Lorem ipsum dolor sit amet"/>
                 </a>
             </div>
             <div class="text">
@@ -88,7 +90,7 @@
             </div>
             <div class="portfolioimage">
                 <a href="" rel="prettyPhoto" title="Lorem ipsum dolor sit amet">
-                    <img src="<?php echo THEME_URL; ?>/images/latest-projects/project03.jpg" alt="Lorem ipsum dolor sit amet"/>
+                    <img src="http://www.belail.breakthrough-eg.net/wp-content/uploads/2013/02/projects.jpg" alt="Lorem ipsum dolor sit amet"/>
                 </a>
             </div>
             <div class="text">

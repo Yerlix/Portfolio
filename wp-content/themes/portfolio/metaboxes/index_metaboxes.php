@@ -65,8 +65,8 @@ function create_home_metaboxes(){
 	$prefix = 'yer_';
 	$meta_boxes   = array();
 	$meta_boxes[] = array(
-		'id' => 'advanced',
-	    'title' => __( 'Advanced Fields', 'rwmb' ),
+		'id' => 'main',
+	    'title' => __( 'Main Fields', 'rwmb' ),
 	    'pages' => array( 'post', 'page' ),
 	    'context' => 'normal',
 	    'priority' => 'high',
@@ -82,8 +82,69 @@ function create_home_metaboxes(){
 				'name'             => __( 'Slide images', 'rwmb' ),
 				'id'               => "{$prefix}slideimgs",
 				'type'             => 'plupload_image',
-				'max_file_uploads' => 4,
+				'max_file_uploads' => 10,
 				'desc' => 'Dimensions: 986 × 339',
+			),
+		),
+	);
+	$meta_boxes[] = array(
+		'id' => 'about',
+	    'title' => __( 'About Fields', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'		=> "{$prefix}abouttitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// IMAGE UPLOAD
+			array(
+				'name'             => __( 'Images (max 2)', 'rwmb' ),
+				'id'               => "{$prefix}aboutimgs",
+				'type'             => 'plupload_image',
+				'max_file_uploads' => 2,
+				'desc' => '',
+			),
+			array(
+				'id'		=> "{$prefix}aboutcontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "textarea",
+			),
+		),
+	);
+	$meta_boxes[] = array(
+		'id' => 'links',
+	    'title' => __( 'Useful links Fields', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'		=> "{$prefix}abouttitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// IMAGE UPLOAD
+			array(
+				'name'             => __( 'Link images (max 2)', 'rwmb' ),
+				'id'               => "{$prefix}linkimgs",
+				'type'             => 'plupload_image',
+				'max_file_uploads' => 2,
+				'desc' => 'Dimensions: similar to each other',
+			),
+			array(
+				'id'		=> "{$prefix}linkcontact",
+				'name'	=> __( "Contact content", 'rwmb' ),
+				'type'	=> "textarea",
+			),
+			array(
+				'id'		=> "{$prefix}linkprojects",
+				'name'	=> __( "Project content", 'rwmb' ),
+				'type'	=> "textarea",
 			),
 		),
 	);
