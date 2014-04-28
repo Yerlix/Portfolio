@@ -35,14 +35,20 @@
         <!-- End Latest Project titles -->
         
         <!-- Start About -->
-        <?php $images = rwmb_meta( 'yer_aboutimgs', 'type=plupload_image' ); var_dump($images);?>
+        <?php $uploadedimgs = rwmb_meta( 'yer_aboutimgs', 'type=plupload_image' ); ?>
+        <?php $images = array(); ?>
+        <?php foreach ($uploadedimgs as $image) {
+            $images[] = $image;
+        }
+        ?>
         <div class="boxes-full">
             <div class="boxes-padding">
-                <div class="bti">
-                    <div class="featured-images"><img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>"></div>
-                    <div class="featured-titles"><?php if (yer_get_meta('aboutsub')) { echo yer_get_meta('aboutsub'); } else { echo "Over mezelf" ; } ?></div>
+                <div class="bti-about">
+                    <div class="about-images"><img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>"></div>
+                    <div class="about-titles"><?php if (yer_get_meta('aboutsub')) { echo yer_get_meta('aboutsub'); } else { echo "Over mezelf" ; } ?></div>
+                    <div class="about-text"><?php if (yer_get_meta('aboutcontent')) echo yer_get_meta('aboutcontent'); ?></div>
                 </div>
-                <div class="featured-text"><?php if (yer_get_meta('aboutcontent')) echo yer_get_meta('aboutcontent'); ?></div>
+                
             </div>
             <span class="box-arrow"></span>
         </div>
