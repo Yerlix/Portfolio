@@ -3,67 +3,61 @@
     
         <!-- Start Featured Boxes -->
         <div class="boxes-third boxes-first">
-        
             <div class="boxes-padding">
-            
                 <div class="bti">
                     <div class="featured-images"><img src="<?php echo THEME_URL; ?>/images/responsive-icon.png" width="72" height="53" alt="Responsive"></div>
                     <div class="featured-titles">Responsive Html</div>
                 </div>
                 <div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non ipsum nunc, nec sagittis tellus.</div>
-            
             </div>
-            
             <span class="box-arrow"></span>
-        
         </div>
         
         <div class="boxes-three-four">
-        
             <div class="boxes-padding">
-            
                 <div class="bti">
                     <div class="featured-images"><img src="<?php echo THEME_URL; ?>/images/cleansleek-icon.png" width="66" height="53" alt="Responsive"></div>
                     <div class="featured-titles">clean & sleek</div>
                 </div>
                 <div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non ipsum nunc, nec sagittis tellus.</div>
-            
             </div>
-            
             <span class="box-arrow"></span>
-        
-        </div>
-        
-        <div class="boxes-third boxes-first">
-        
-            <div class="boxes-padding">
-                
-                <div class="bti">
-                    <div class="featured-images"><img src="<?php echo THEME_URL; ?>/images/google-icon.png" width="54" height="53" alt="Responsive"></div>
-                    <div class="featured-titles">cross browser</div>
-                </div>
-                <div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non ipsum nunc, nec sagittis tellus.</div>
-            
-            </div>
-            
-            <span class="box-arrow"></span>
-        
         </div>
         <!-- End Featured Boxes -->
         
-        <!-- Start Latest Project titles -->
+        <!-- Start About titles -->
         <div class="boxes-full">
-        
             <div class="boxes-padding fullpadding">
-                <h1><?php if (yer_get_meta('linktitle')) { echo yer_get_meta('linktitle'); } else { echo "Nuttige links" ; } ?></h1>
+                <h1><?php if (yer_get_meta('abouttitle')) { echo yer_get_meta('abouttitle'); } else { echo "Over mezelf" ; } ?></h1>
             </div>
-            
             <span class="box-arrow"></span>
-        
         </div>
         <!-- End Latest Project titles -->
         
-        <!-- Start Latest 3 Projects -->
+        <!-- Start About -->
+        <?php $images = rwmb_meta( 'yer_aboutimgs', 'type=plupload_image' ); var_dump($images);?>
+        <div class="boxes-full">
+            <div class="boxes-padding">
+                <div class="bti">
+                    <div class="featured-images"><img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>"></div>
+                    <div class="featured-titles"><?php if (yer_get_meta('aboutsub')) { echo yer_get_meta('aboutsub'); } else { echo "Over mezelf" ; } ?></div>
+                </div>
+                <div class="featured-text"><?php if (yer_get_meta('aboutcontent')) echo yer_get_meta('aboutcontent'); ?></div>
+            </div>
+            <span class="box-arrow"></span>
+        </div>
+        <!-- End About -->
+
+        <!-- Start Useful links titles -->
+        <div class="boxes-full">
+            <div class="boxes-padding fullpadding">
+                <h1><?php if (yer_get_meta('linktitle')) { echo yer_get_meta('linktitle'); } else { echo "Nuttige links" ; } ?></h1>
+            </div>
+            <span class="box-arrow"></span>
+        </div>
+        <!-- End Useful links titles -->
+        
+        <!-- Start Useful links -->
         <div class="boxes-half boxes-first">
           <div class="portfoliowrap">
             <div class="title">
@@ -76,7 +70,7 @@
                 </a>
             </div>
             <div class="text">
-                Contacteer mij voor meer informatie.
+                <?php if (yer_get_meta('linkcontact')) echo yer_get_meta('linkcontact'); ?>
                 <span class="textarrow"></span>
             </div>
           </div>
@@ -94,14 +88,12 @@
                 </a>
             </div>
             <div class="text">
-                Mijn projecten tijdens mijn stage en in mijn vrije tijd.
+                <?php if (yer_get_meta('linkprojects')) echo yer_get_meta('linkprojects'); ?>
                 <span class="textarrow"></span>
             </div>
-            
           </div>
-        
         </div>
-        <!-- End Latest 3 Projects -->
+        <!-- End Useful links -->
     
     </div>
     <!-- End Main Body Wrap -->

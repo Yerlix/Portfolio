@@ -100,6 +100,11 @@ function create_home_metaboxes(){
 				'name'	=> __( "Title", 'rwmb' ),
 				'type'	=> "text",
 				),
+			array(
+				'id'		=> "{$prefix}aboutsub",
+				'name'	=> __( "Subtitle", 'rwmb' ),
+				'type'	=> "text",
+				),
 			// IMAGE UPLOAD
 			array(
 				'name'             => __( 'Images (max 2)', 'rwmb' ),
