@@ -573,10 +573,11 @@ hr{
 	width:48%;
 	height:auto;
 	float:left;
-	margin:15px 1%;
+	margin-top:15px;
 	border:1px solid #d5d5d5;
 	text-align:center;
 	position:relative;
+	min-height: 142px;
 }
 
 /* 3rd width*/
@@ -589,8 +590,21 @@ hr{
 	border:1px solid #d5d5d5;
 	text-align:center;
 	position:relative;
+	min-height: 142px;
 }
 
+/* 3/4rd width*/
+.boxes-three-four{
+	background-color:white;
+	width:66.5%;
+	height:100%;
+	float:left;
+	margin:15px 0;
+	border:1px solid #d5d5d5;
+	text-align:center;
+	position:relative;
+	min-height: 142px;
+}
 .boxes-padding{
 	width:94%;
 	height:100% !important;
@@ -654,6 +668,40 @@ hr{
 	float:left;
 	padding:0px 0px 20px 0px;
 	text-align:center;
+	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
+	color:#7e7e7e;
+	font-size:12pt;
+}
+
+/* About Section*/
+.bti-about{
+	width:100%;
+	float:left;
+	cursor:pointer;
+	padding-bottom: 3%;
+}
+
+.about-images{
+	width:30%;
+	height:30%;
+	float:left;
+}
+
+.about-titles{
+	width:68%;
+	float:right;
+	padding-top:10px;
+	font-family:'BebasNeueRegular',Arial, Helvetica, sans-serif;
+	color:#da803f;
+	font-size:20pt;
+	text-align:left;
+}
+
+.about-text{
+	width: 68%;
+	float:right;
+	padding:0px 0px 20px 0px;
+	text-align:left;
 	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
 	color:#7e7e7e;
 	font-size:12pt;
