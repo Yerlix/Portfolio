@@ -100,4 +100,10 @@ $(document).ready(function(){
 		return false;
 	});
 	//// End Accordian Function ////
+
+
+	//// Contact Form ////
+	$('.screen-reader-response').remove();
+	// $('.wpcf7-validation-errors').remove();
+	// $('.wpcf7-response-output').remove();
 });

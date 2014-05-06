@@ -79,7 +79,7 @@
             $images[] = $image;
         }
         ?>
-        <div class="boxes-half boxes-first">
+        <div class="boxes-half boxes-first linkHeight">
           <div class="portfoliowrap">
             <div class="title">
                 Contact
@@ -97,7 +97,7 @@
           </div>
         </div>
         
-        <div class="boxes-half boxes-half-last">
+        <div class="boxes-half boxes-half-last linkHeight">
           <div class="portfoliowrap">
             <div class="title">
                 Projects

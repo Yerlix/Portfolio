@@ -39,6 +39,7 @@
 	//// Script for equal heights
 	$(document).ready(function(){
 		$(".homeHeight").eqHeight();
+		$(".linkHeight").eqHeight();
 	})
 	
 </script>

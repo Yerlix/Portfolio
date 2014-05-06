@@ -1804,7 +1804,6 @@ div.tab_contents_active {
 .portfoliowrap{
 	width:100%;
 	float:left;
-	border: 1px solid #d5d5d5;
 }
 
 .portfoliowrap:hover{

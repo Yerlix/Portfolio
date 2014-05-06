@@ -1,3 +1,7 @@
+.form-item{
+	min-height: 65px;
+}
+
 div.wpcf7 {
 	margin: 0;
 	padding: 0;
@@ -6,6 +10,7 @@ div.wpcf7 {
 div.wpcf7-response-output {
 	margin: 2em 0.5em 1em;
 	padding: 0.2em 1em;
+	color: #939393;
 }
 
 div.wpcf7 .screen-reader-response {
@@ -20,20 +25,22 @@ div.wpcf7 .screen-reader-response {
 }
 
 div.wpcf7-mail-sent-ok {
-	border: 2px solid #398f14;
 }
 
 div.wpcf7-mail-sent-ng {
-	border: 2px solid #ff0000;
 }
 
 div.wpcf7-spam-blocked {
-	border: 2px solid #ffa500;
+	color: red;
 }
 
 div.wpcf7-validation-errors {
-	border: 2px solid #f7e700;
-	background-color: yellow !important;
+	color: red;
+	float: left;
+	margin: 10px;
+	margin-left: 130px;
+	border: 2px solid #D5D5D5;
+	padding: 10px;
 }
 
 span.wpcf7-form-control-wrap {
@@ -41,9 +48,10 @@ span.wpcf7-form-control-wrap {
 }
 
 span.wpcf7-not-valid-tip {
-	color: #f00;
-	font-size: 1em;
-	display: block;
+	color: red;
+	float: left;
+	margin-left: 16px;
+	font-size: 14px;
 }
 
 .use-floating-validation-tip span.wpcf7-not-valid-tip { 
