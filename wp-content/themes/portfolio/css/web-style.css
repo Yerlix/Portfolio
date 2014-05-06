@@ -20,7 +20,7 @@ h1,h2{
 
 p{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 }
 
 hr{
@@ -108,6 +108,7 @@ hr{
 	width:auto;
 	float:right;
 	height:46px;
+	margin-right: 20.2%;
 }
 
 .socialfooter ul{
@@ -267,7 +268,7 @@ hr{
 	width:200px;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	color: #807f7f;
-	font-size:10pt;
+	font-size:12pt;
 	font-weight:normal;
 	text-decoration:none;
 }
@@ -306,7 +307,7 @@ hr{
 #navi ul li a, #navi ul li a:visited{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	color: #807f7f;
-	font-size:10pt;
+	font-size: 12pt;
 	font-weight:normal;
 	text-decoration:none;
 }
@@ -314,7 +315,7 @@ hr{
 #navi ul li a:hover{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	color: #da600a;
-	font-size:10pt;
+	font-size: 12pt;
 	font-weight:normal;
 	text-decoration:none;
 	text-shadow: 1px 1px 2px #999;
@@ -375,7 +376,7 @@ hr{
 	float:left;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	color: #807f7f;
-	font-size:10pt;
+	font-size: 12pt;
 	font-weight:normal;
 	text-decoration:none;
 	padding-top:14px;
@@ -456,7 +457,7 @@ hr{
 .nivo-directionNav a {
 	position:absolute;
 	z-index:9;
-	cursor:pointer;
+	/*cursor:pointer;*/
 	bottom:-54px;
 	background-color:white;
 }
@@ -639,12 +640,17 @@ hr{
 	margin-left:2%;
 }
 
+.boxes-half-last{
+	margin-right:0%;
+	margin-left:1.6%;
+}
+
 
 /* Featured Section*/
 .bti{
 	width:100%;
 	float:left;
-	cursor:pointer;
+	/*cursor:pointer;*/
 }
 
 .featured-images{
@@ -667,7 +673,7 @@ hr{
 	width:100%;
 	float:left;
 	padding:0px 0px 20px 0px;
-	text-align:center;
+	text-align:left;
 	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
 	color:#7e7e7e;
 	font-size:12pt;
@@ -675,9 +681,9 @@ hr{
 
 /* About Section*/
 .bti-about{
-	width:100%;
+	width:100
 	float:left;
-	cursor:pointer;
+	/*cursor:pointer;*/
 	padding-bottom: 3%;
 }
 
@@ -685,6 +691,22 @@ hr{
 	width:30%;
 	height:30%;
 	float:left;
+	margin-bottom: 25px;
+}
+
+.about-images-sub {
+	width:25%;
+	height:30%;
+	float:left;
+	margin-top: 27%;
+	margin-left: -27%;
+	padding-bottom: 25px;
+	overflow: hidden;
+	text-align:center;
+	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
+	color:#7e7e7e;
+	font-size:10pt;
+	font-style: italic;
 }
 
 .about-titles{
@@ -714,7 +736,7 @@ hr{
 #footer{
 	width:100%;
 	float:left;
-	background-image: url(../images/footer-bg.png);
+	/*background-image: url(../images/footer-bg.png);*/
 	min-height:50px;
 	margin-top:20px;
 }
@@ -743,14 +765,12 @@ hr{
 	width:50%;
 	float:left;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 10pt;
 	color:#7e7e7e;
 	padding-top:16px;
 }
 
 #copyright a, #copyright a:visited,#copyright a:hover{
-	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
 	color:#7e7e7e;
 }
 
@@ -1024,7 +1044,7 @@ hr{
 	background-image: url(../images/scrolltop.png);
 	background-repeat: no-repeat;
 	background-position: 0px 1px;
-	cursor:pointer;
+	/*cursor:pointer;*/
 }
 
 .clear{
@@ -1064,7 +1084,7 @@ hr{
 	font-weight:bold;
 	text-shadow:0px 1px 2px #333;
 	box-shadow: 0px 1px 2px #999;
-	font-size:10pt;
+	font-size: 12pt;
 	margin:0px 5px 0px 5px;
 }
 
@@ -1100,7 +1120,7 @@ hr{
 	font-weight:bold;
 	text-shadow:0px 1px 2px #333;
 	box-shadow: 0px 1px 2px #999;
-	font-size:10pt;
+	font-size: 12pt;
 	margin:0px 5px 0px 5px;
 }
 
@@ -1139,7 +1159,7 @@ hr{
 	text-shadow:0px 1px 2px #333;
 	box-shadow: 0px 0px 10px #CCC;
 	box-shadow: 0px 1px 2px #999;
-	font-size:10pt;
+	font-size: 12pt;
 	margin:0px 5px 0px 5px;
 }
 
@@ -1396,7 +1416,7 @@ li.tick{
 	padding:3px 0px 3px 22px;
 	list-style-type: none;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 }
 
 li.orange-cross{
@@ -1406,7 +1426,7 @@ li.orange-cross{
 	padding:3px 0px 3px 22px;
 	list-style-type: none;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 }
 
 li.red-cross{
@@ -1416,7 +1436,7 @@ li.red-cross{
 	padding:3px 0px 3px 22px;
 	list-style-type: none;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 }
 
 /**********************************************/
@@ -1605,7 +1625,7 @@ li.red-cross{
 .tabs_container ul.tabs li {
 	float: left;
 	margin-right:2px;
-	cursor:pointer;
+	/*cursor:pointer;*/
 }
 .tabs_container ul.tabs li a, .tabs_container ul.tabs li a:visited {
 	padding: 6px 16px;
@@ -1661,9 +1681,9 @@ div.tab_contents_active {
 	padding:3%;
 	color:#807f7f;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	border: 1px solid #DDD;
-	cursor:pointer;
+	/*cursor:pointer;*/
 	background-color: #E6E6E6;
 	background-image:url(../images/toggles.png);
 	background-repeat: no-repeat;
@@ -1679,7 +1699,7 @@ div.tab_contents_active {
 	float:left;
 	padding:3%;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	color:#666666;
 	border-left: 1px solid #DDD;
 	border-right: 1px solid #DDD;
@@ -1702,9 +1722,9 @@ div.tab_contents_active {
 	padding:3%;
 	color:#807f7f;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	border: 1px solid #DDD;
-	cursor:pointer;
+	/*cursor:pointer;*/
 	background-color: #E6E6E6;
 	background-image:url(../images/toggles.png);
 	background-repeat: no-repeat;
@@ -1714,7 +1734,7 @@ div.tab_contents_active {
 .accordiontitle a, .accordiontitle a:visited, .accordiontitle a:hover{
 	color:#807f7f;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	text-decoration:none;
 }
 
@@ -1727,7 +1747,7 @@ div.tab_contents_active {
 	float:left;
 	padding:3%;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	color:#666666;
 	border-left: 1px solid #DDD;
 	border-right: 1px solid #DDD;
@@ -1770,7 +1790,7 @@ div.tab_contents_active {
 	float@left;
 	display:inline-block;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	color:orange;
 	margin-bottom:20px;
 }
@@ -2042,7 +2062,7 @@ div.tab_contents_active {
 
 .bloginfo p span{
 	color:#de770c;
-	cursor:pointer;
+	/*cursor:pointer;*/
 }
 
 .blogtext{
@@ -2221,11 +2241,11 @@ div.tab_contents_active {
 
 .avatardate{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	padding:3px 0px 3px 30px;
 	background-image: url(../images/calender-big.jpg);
 	background-repeat: no-repeat;
-	cursor:pointer;
+	/*cursor:pointer;*/
 	background-position: 0px -2px;
 }
 
@@ -2304,7 +2324,7 @@ div.tab_contents_active {
 	height:120px;
 	overflow:hidden;
 	font-family: 'HelveticaLTStdRoman', Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size: 12pt;
 	color: #AFADAD;
 }
 
@@ -2350,7 +2370,7 @@ div.tab_contents_active {
 	margin:0px;
 	background-image: url(../images/orange-cross.png);
 	background-repeat: no-repeat;
-	font-size:10pt;
+	font-size: 12pt;
 }
 
 .contacttitle{

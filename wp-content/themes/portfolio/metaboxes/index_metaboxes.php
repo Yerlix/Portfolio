@@ -65,8 +65,8 @@ function create_home_metaboxes(){
 	$prefix = 'yer_';
 	$meta_boxes   = array();
 	$meta_boxes[] = array(
-		'id' => 'advanced',
-	    'title' => __( 'Advanced Fields', 'rwmb' ),
+		'id' => 'home',
+	    'title' => __( 'Home Fields', 'rwmb' ),
 	    'pages' => array( 'post', 'page' ),
 	    'context' => 'normal',
 	    'priority' => 'high',
@@ -84,6 +84,125 @@ function create_home_metaboxes(){
 				'type'             => 'plupload_image',
 				'max_file_uploads' => 4,
 				'desc' => 'Dimensions: 986 × 339',
+			),
+			// HEADING
+            array(
+                'type' => 'heading',
+                'name' => __( 'Hobby\'s', 'rwmb' ),
+                'id'   => 'heading_hobby', // Not used but needed for plugin
+            ),
+			array(
+				'id'		=> "{$prefix}hobbytitle",
+				'name'	=> __( "Hobby Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// IMAGE UPLOAD
+            array(
+                'name' => __( 'Image', 'rwmb' ),
+                'id'   => "{$prefix}hobbyimg",
+                'type' => 'plupload_image',
+                'max_file_uploads' => 1,
+            ),
+			// WYSIWYG/RICH TEXT EDITOR
+            array(
+                'name' => __( 'Hobby content', 'rwmb' ),
+                'id'   => "{$prefix}hobbycontent",
+                'type' => 'wysiwyg',
+                // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+                'raw'  => false,
+                'std'  => __( '', 'rwmb' ),
+
+                // Editor settings, see wp_editor() function: look4wp.com/wp_editor
+                'options' => array(
+                    'textarea_rows' => 20,
+                    'teeny'         => false,
+                    'media_buttons' => false,
+                ),
+            ),
+		),
+	);
+
+	$meta_boxes[] = array(
+		'id' => 'about',
+	    'title' => __( 'About Fields', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'		=> "{$prefix}abouttitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'		=> "{$prefix}aboutsub",
+				'name'	=> __( "Subttitle", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// WYSIWYG/RICH TEXT EDITOR
+            array(
+                'name' => __( 'WYSIWYG / Rich Text Editor', 'rwmb' ),
+                'id'   => "{$prefix}aboutcontent",
+                'type' => 'wysiwyg',
+                // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+                'raw'  => false,
+                'std'  => __( 'WYSIWYG default value', 'rwmb' ),
+
+                // Editor settings, see wp_editor() function: look4wp.com/wp_editor
+                'options' => array(
+                    'textarea_rows' => 20,
+                    'teeny'         => false,
+                    'media_buttons' => false,
+                ),
+            ),
+			// IMAGE UPLOAD
+			array(
+				'name'             => __( 'About images', 'rwmb' ),
+				'id'               => "{$prefix}aboutimgs",
+				'type'             => 'plupload_image',
+				'max_file_uploads' => 1,
+				'desc' => 'Images for the about tab',
+			),
+			array(
+				'id'		=> "{$prefix}imgsub",
+				'name'	=> __( "Image text", 'rwmb' ),
+				'type'	=> "text",
+				'desc'	=> 'Text under the image'
+				),
+		),
+	);
+
+	$meta_boxes[] = array(
+		'id' => 'link',
+	    'title' => __( 'Link Fields', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'		=> "{$prefix}linktitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+			),
+			array(
+				'id'		=> "{$prefix}linkcontact",
+				'name'	=> __( "Contact content", 'rwmb' ),
+				'type'	=> "text",
+			),
+			array(
+				'id'		=> "{$prefix}linkprojects",
+				'name'	=> __( "Projects contenct", 'rwmb' ),
+				'type'	=> "text",
+			),
+			// IMAGE UPLOAD
+			array(
+				'name'             => __( 'Link images', 'rwmb' ),
+				'id'               => "{$prefix}linkimgs",
+				'type'             => 'plupload_image',
+				'max_file_uploads' => 2,
+				'desc' => 'First one is for contact, second for projects',
 			),
 		),
 	);

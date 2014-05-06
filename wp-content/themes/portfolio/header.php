@@ -12,6 +12,7 @@
 <script src="<?php echo THEME_URL; ?>/js/jquery.nivo.slider.js" type="text/javascript"</script>
 <script src="<?php echo THEME_URL; ?>/js/twitter.js"></script>    
 <script src="<?php echo THEME_URL; ?>/js/custom.js"></script>   
+<script src="<?php echo THEME_URL; ?>/js/eqHeight.js"></script>   
 <script>
 	//// Start Simple Sliders ////
 	$(function() {
@@ -32,6 +33,14 @@
 	}
 	//// End Simple Sliders //// 
 </script> 
+
+<script type="text/javascript">
+	//// Script for equal heights
+	$(document).ready(function(){
+		$(".homeHeight").eqHeight();
+	})
+	
+</script>
 </head>
 
 <body>
@@ -46,7 +55,7 @@
 				<!-- End contact info area -->
 				<!-- Start navigation -->
 				<div id="navi">
-					<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>                
+					<?php wp_nav_menu( array( 'theme_location' => 'header_menu' ) ); ?>                
 				</div>
 				<!-- End navigation -->
 				

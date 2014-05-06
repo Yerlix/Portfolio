@@ -31,15 +31,14 @@ if ( is_readable($locale_file) )
 define("THEME_URL", get_template_directory_uri());
 
 /**
- * Using a menu
- *
- */
-function register_my_menu() {
-  register_nav_menu('header-menu',__( 'Header Menu' ));
-}
-add_action( 'init', 'register_my_menu' );
-
-/**
  * Using metaboxes
  */
 include "metaboxes/index_metaboxes.php";
+
+/**
+ * Adding scripts to WP
+ */
+function custom_scripts() {
+	wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/contact_validation.js' );
+}
+add_action( 'wp_enqueue_scripts', 'custom_scripts' );
