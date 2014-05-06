@@ -104,6 +104,6 @@ $(document).ready(function(){
 
 	//// Contact Form ////
 	$('.screen-reader-response').remove();
-	// $('.wpcf7-validation-errors').remove();
+	$('.wpcf7-validation-errors').remove();
 	// $('.wpcf7-response-output').remove();
 });
