@@ -31,18 +31,7 @@
         </div>
         <!-- End About -->
 
-        <!-- Start Featured Boxes -->
-        <div class="boxes-third boxes-first homeHeight">
-            <div class="boxes-padding">
-                <div class="bti">
-                    <div class="featured-images"><img src="<?php echo THEME_URL; ?>/images/responsive-icon.png" width="72" height="53" alt="Responsive"></div>
-                    <div class="featured-titles">Responsive Html</div>
-                    <div class="featured-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non ipsum nunc, nec sagittis tellus.</div>
-                </div>
-            </div>
-            <span class="box-arrow"></span>
-        </div>
-        
+        <!-- Start Featured Boxes -->        
         <!-- Retrieve hobby image -->
         <?php $uploadedimgs = rwmb_meta( 'yer_hobbyimg', 'type=plupload_image' ); ?>
         <?php $images = array(); ?>
@@ -50,10 +39,10 @@
             $images[] = $image;
         }
         ?>
-        <div class="boxes-three-four homeHeight">
+        <div class="boxes-full homeHeight">
             <div class="boxes-padding">
                 <div class="bti">
-                    <div class="featured-images"><img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>" width="40%"></div>
+                    <div class="featured-images"><img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>" width="80%"></div>
                     <div class="featured-titles"><?php if (yer_get_meta('hobbytitle')) echo yer_get_meta('hobbytitle'); ?></div>
                     <div class="featured-text"><?php if (yer_get_meta('hobbycontent')) echo yer_get_meta('hobbycontent'); ?></div>
                 </div>

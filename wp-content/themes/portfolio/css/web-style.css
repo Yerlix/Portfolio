@@ -656,37 +656,30 @@ hr{
 .featured-images{
 	width:30%;
 	height:30%;
-	float:left;
+	float:right;
 }
 
 .featured-titles{
 	width:68%;
-	float:right;
+	float:left;
 	padding-top:10px;
 	font-family:'BebasNeueRegular',Arial, Helvetica, sans-serif;
 	color:#da803f;
 	font-size:20pt;
-	text-align:left;
+	text-align:right;
 }
 
 .featured-text{
-	width:100%;
-	float:left;
+	width:68%;
+	float:right;
 	padding:0px 0px 20px 0px;
-	text-align:left;
+	text-align:justify;
 	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
 	color:#7e7e7e;
 	font-size:12pt;
 }
 
 /* About Section*/
-.bti-about{
-	width:100
-	float:left;
-	/*cursor:pointer;*/
-	padding-bottom: 3%;
-}
-
 .about-images{
 	width:30%;
 	height:30%;
@@ -723,7 +716,7 @@ hr{
 	width: 68%;
 	float:right;
 	padding:0px 0px 20px 0px;
-	text-align:left;
+	text-align:justify;
 	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
 	color:#7e7e7e;
 	font-size:12pt;
