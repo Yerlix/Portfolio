@@ -13,6 +13,7 @@
 <script src="<?php echo THEME_URL; ?>/js/twitter.js"></script>    
 <script src="<?php echo THEME_URL; ?>/js/custom.js"></script>   
 <script src="<?php echo THEME_URL; ?>/js/eqHeight.js"></script>   
+<script src="<?php echo THEME_URL; ?>/js/contact_validation.js"></script>   
 <script>
 	//// Start Simple Sliders ////
 	$(function() {
