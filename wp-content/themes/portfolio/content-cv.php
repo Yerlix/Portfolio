@@ -385,5 +385,6 @@
         <!-- End Useful links -->
     
     </div>
-    <?php echo do_shortcode('[printfriendly]'); ?>
+    <img alt="Download PDF" src="http://portfolio.local/wp-content/plugins/wp-post-to-pdf-enhanced/asset/images/pdf.png">
+    <?php if (function_exists("wpptopdfenh_display_icon")) echo 'test' . wpptopdfenh_display_icon();?>
     <!-- End Main Body Wrap
