@@ -65,19 +65,19 @@ function create_cv_metaboxes(){
 	$prefix = 'yer_';
 	$meta_boxes   = array();
 	$meta_boxes[] = array(
-		'id' => 'cv',
-	    'title' => __( 'CV Fields', 'rwmb' ),
+		'id' => 'details',
+	    'title' => __( 'Details', 'rwmb' ),
 	    'pages' => array( 'post', 'page' ),
 	    'context' => 'normal',
 	    'priority' => 'high',
 	    'autosave' => true,
 		'fields' => array(
 			array(
-				'id'	=> "{$prefix}cvtitle",
+				'id'	=> "{$prefix}detailstitle",
 				'name'	=> __( "Title", 'rwmb' ),
 				'type'	=> "text",
 				),
-			// persoonlijke gegevens
+			//// persoonlijke gegevens
 			array(
 				'id'	=> "{$prefix}headingpers",
 				'type'	=> "heading",
@@ -110,7 +110,7 @@ function create_cv_metaboxes(){
 				"type"	=> "text",
 				"clone"	=> true,
 				),
-			// vrije tijd
+			//// vrije tijd
 			array(
 				'id'	=> "{$prefix}headinghobby",
 				'type'	=> "heading",
@@ -130,5 +130,263 @@ function create_cv_metaboxes(){
 		),
 	);
 
+	$meta_boxes[] = array(
+		'id' => 'kennis',
+	    'title' => __( 'Kennis', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'	=> "{$prefix}kennistitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			//// Knowledge and skills
+			array(
+				'id'	=> "{$prefix}headingkennis",
+				'type'	=> "heading",
+				'name'	=> 'Kennis en vaardigheden'
+				),
+			array(
+				'id'	=> "{$prefix}spectitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				"id"	=> "{$prefix}headinglabel",
+				"type"	=> "heading",
+				"name"	=> "Kennis labels"
+				),
+			array(
+				"id"	=> "{$prefix}kennislabels",
+				"name"	=> "Labels",
+				"type"	=> "text",
+				"clone"	=> true,
+				),
+			array(
+				"id"	=> "{$prefix}headinginfo",
+				"type"	=> "heading",
+				"name"	=> "Kennis gegevens"
+				),
+			array(
+				"id"	=> "{$prefix}kenniscontent",
+				"name"	=> "Content",
+				"type"	=> "text",
+				"clone"	=> true,
+				),
+
+			//// languages
+			array(
+				'id'	=> "{$prefix}headinglang",
+				'type'	=> "heading",
+				'name'	=> 'Talen'
+				),
+			array(
+				'id'	=> "{$prefix}langtitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// Nederlands
+			array(
+				'id'	=> "{$prefix}nedtitle",
+				'name'	=> __( "Nederlands Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}nedcontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=> true,
+				),
+			// Engels
+			array(
+				'id'	=> "{$prefix}engtitle",
+				'name'	=> __( "Engels Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}engcontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=> true,
+				),
+			// Frans
+			array(
+				'id'	=> "{$prefix}franstitle",
+				'name'	=> __( "Frans Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}franscontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=> true,
+				),
+		),
+	);
+
+	$meta_boxes[] = array(
+		'id' => 'experience',
+	    'title' => __( 'Ervaring', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'	=> "{$prefix}exptitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			//// Opleiding
+			array(
+				'id'	=> "{$prefix}headingopleiding",
+				'type'	=> "heading",
+				'name'	=> 'Opleiding'
+				),
+			array(
+				'id'	=> "{$prefix}opltitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// Middelbaar
+			array(
+				'id'	=> "{$prefix}midtitle",
+				'name'	=> __( "Middelbaar Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}midcontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=> true,
+				),
+			// Hoger
+			array(
+				'id'	=> "{$prefix}hogertitle",
+				'name'	=> __( "Hoger Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}hogercontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=> true,
+				),
+			//// Werkervaring
+			array(
+				'id'	=> "{$prefix}headingervaring",
+				'type'	=> "heading",
+				'name'	=> 'Werkervaring'
+				),
+			array(
+				'id'	=> "{$prefix}ervtitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// Vakantiejob
+			array(
+				'id'	=> "{$prefix}vaktitle",
+				'name'	=> __( "Vakantie Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}vakcontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=> true,
+				),
+			// Stage
+			array(
+				'id'	=> "{$prefix}stagetitle",
+				'name'	=> __( "Stage Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}stagecontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=> true,
+				),
+		),
+	);
+	
+	$meta_boxes[] = array(
+		'id' => 'varia',
+	    'title' => __( 'Varia', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'	=> "{$prefix}variatitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			//// Opmerkingen
+			array(
+				'id'	=> "{$prefix}headingopmerkingen",
+				'type'	=> "heading",
+				'name'	=> 'Opmerkingen'
+				),
+			array(
+				'id'	=> "{$prefix}opmtitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// Rijbewijs
+			array(
+				'id'	=> "{$prefix}rijtitle",
+				'name'	=> __( "Rijbewijs Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}rijcontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=>	true,
+				),
+			// SIN
+			array(
+				'id'	=> "{$prefix}sintitle",
+				'name'	=> __( "SIN Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			array(
+				'id'	=> "{$prefix}sincontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=>	true,
+				),
+			//// Referenties
+			array(
+				'id'	=> "{$prefix}headingreferenties",
+				'type'	=> "heading",
+				'name'	=> 'Referenties'
+				),
+			array(
+				'id'	=> "{$prefix}reftitle",
+				'name'	=> __( "Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// Refs
+			array(
+				'id'	=> "{$prefix}reflabels",
+				'name'	=> __( "Referenties labels", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=>	true
+				),
+			array(
+				'id'	=> "{$prefix}refcontent",
+				'name'	=> __( "Content", 'rwmb' ),
+				'type'	=> "text",
+				'clone'	=>	true,
+				),
+
+		),
+	);
 	return $meta_boxes;
 }

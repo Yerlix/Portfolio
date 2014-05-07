@@ -38,9 +38,15 @@
 <script type="text/javascript">
 	//// Script for equal heights
 	$(document).ready(function(){
+		// homepage
 		$(".homeHeight").eqHeight();
 		$(".linkHeight").eqHeight();
+
+		// cv page
 		$(".persHeight").eqHeight();
+		$(".kennisHeight").eqHeight();
+		$(".expHeight").eqHeight();
+		$(".variaHeight").eqHeight();
 	})
 	
 </script>

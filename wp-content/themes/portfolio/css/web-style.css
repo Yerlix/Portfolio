@@ -724,42 +724,19 @@ hr{
 }
 
 /* Curriculum Vitea Section*/
-.cv-images{
-	width:30%;
-	height:30%;
-	float:left;
-	margin-bottom: 25px;
-}
-
-.cv-images-sub {
-	width:25%;
-	height:30%;
-	float:left;
-	margin-top: 27%;
-	margin-left: -27%;
-	padding-bottom: 25px;
-	overflow: hidden;
-	text-align:center;
-	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
-	color:#7e7e7e;
-	font-size:10pt;
-	font-style: italic;
-}
-
 .cv-titles{
-	width:68%;
-	float:right;
+	width:100%%;
+	float:left;
 	padding-top:10px;
 	font-family:'BebasNeueRegular',Arial, Helvetica, sans-serif;
 	color:#da803f;
 	font-size:20pt;
-	text-align:left;
+	text-align:center;
 }
 
 .cv-text{
-	width: 68%;
-	float:right;
-	padding:0px 0px 20px 0px;
+	float:left;
+	padding:0px 0px 20px 25px;
 	text-align:justify;
 	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
 	color:#7e7e7e;
@@ -2537,11 +2514,6 @@ textarea.contacttextarea{
 /******** Curriculum Vitea Section ************/
 /**********************************************/
 
-.cvbody{
-	width:68%;
-	float:right;
-}
-
 .cvbody ul{
 	/*width:100%;*/
 	float:left;
@@ -2587,8 +2559,11 @@ textarea.contacttextarea{
 	cursor: default;
 }
 
+.cvbody ul li.cvContent {
+	padding-left: 18px;
+}
+
 .cvbody ul li.cvContent a, .cvbody ul li.cvContent a:visited{
-	padding:4px 8px 4px 18px;
 	margin:0px;
 	list-style-type: none;
 	text-decoration:none;
@@ -2596,7 +2571,7 @@ textarea.contacttextarea{
 }
 
 .cvbody ul li.cvContent a:hover{
-	padding:4px 8px 4px 18px;
+	/*padding:4px 8px 4px 18px;*/
 	margin:0px;
 	list-style-type: none;
 	color:#d25809;
