@@ -62,11 +62,15 @@
         <!-- End Useful links titles -->
         
         <!-- Start Useful links -->
-        <?php $uploadedimgs = rwmb_meta( 'yer_linkimgs', 'type=plupload_image' ); ?>
-        <?php $images = array(); ?>
-        <?php foreach ($uploadedimgs as $image) {
-            $images[] = $image;
-        }
+        <?php 
+            $uploadedimgs = rwmb_meta( 'yer_linkimgs', 'type=plupload_image' );
+            $images = array();
+            foreach ($uploadedimgs as $image) {
+                $images[] = $image;
+            }
+
+            // Get contact page id
+            $contactPageID = get_ID_by_slug('contact');
         ?>
         <div class="boxes-half boxes-first linkHeight">
           <div class="portfoliowrap">
@@ -75,7 +79,7 @@
                 <span class="titlearrow"></span>
             </div>
             <div class="portfolioimage">
-                <a href="" rel="prettyPhoto" title="Lorem ipsum dolor sit amet">
+                <a href="<?php echo get_page_link($contactPageID); ?>" rel="prettyPhoto">
                     <img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>"/>
                 </a>
             </div>

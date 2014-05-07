@@ -34,6 +34,7 @@ define("THEME_URL", get_template_directory_uri());
  * Using metaboxes
  */
 include "metaboxes/index_metaboxes.php";
+include "metaboxes/contact_metaboxes.php";
 
 /**
  * Adding scripts to WP
@@ -43,3 +44,15 @@ function custom_scripts() {
 	wp_enqueue_script( 'contact_validation', get_template_directory_uri() . '/js/contact_validation.js' );
 }
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
+
+/**
+ * Page ID by slug
+ */
+function get_ID_by_slug($page_slug) {
+    $page = get_page_by_path($page_slug);
+    if ($page) {
+        return $page->ID;
+    } else {
+        return null;
+    }
+}

@@ -1,18 +1,17 @@
 <?php
 
 /*
- * Template name: Home
+ * Template name: CV
  */
 
 get_header();
 ?>
 
 <div id="main">
-    <?php get_template_part( 'slider', 'home' ); ?>
 
     <!-- Start H1 Title -->
     <div class="titles">
-        <h1><?php if (yer_get_meta('hometitle')) { echo yer_get_meta('hometitle'); } else { echo "Portfolio" ; } ?></h1>
+        <h1><?php if (yer_get_meta('cvtitle')) { echo yer_get_meta('cvtitle'); } else { echo "Curriculum Vitea" ; } ?></h1>
         
         <span></span>
     

@@ -11,7 +11,7 @@ get_header();
     <!-- Start H1 Title -->
     <div class="titlesnormal">
     
-    	<h1>contact response</h1>
+    	<h1><?php if (yer_get_meta('contacttitle')) { echo yer_get_meta('contacttitle'); } else { echo "Contact" ; } ?></h1>
         
         <span></span>
     
