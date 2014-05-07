@@ -40,6 +40,7 @@
 	$(document).ready(function(){
 		$(".homeHeight").eqHeight();
 		$(".linkHeight").eqHeight();
+		$(".persHeight").eqHeight();
 	})
 	
 </script>

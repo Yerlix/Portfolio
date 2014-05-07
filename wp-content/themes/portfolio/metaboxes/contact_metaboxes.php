@@ -73,12 +73,12 @@ function create_contact_metaboxes(){
 	    'autosave' => true,
 		'fields' => array(
 			array(
-				'id'		=> "{$prefix}contacttitle",
+				'id'	=> "{$prefix}contacttitle",
 				'name'	=> __( "Title", 'rwmb' ),
 				'type'	=> "text",
 				),
 			array(
-				'id'		=> "{$prefix}contactsub",
+				'id'	=> "{$prefix}contactsub",
 				'name'	=> __( "Subttitle", 'rwmb' ),
 				'type'	=> "text",
 				),

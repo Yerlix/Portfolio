@@ -575,6 +575,7 @@ hr{
 	height:auto;
 	float:left;
 	margin-top:15px;
+	margin-bottom:15px;
 	border:1px solid #d5d5d5;
 	text-align:center;
 	position:relative;
@@ -722,6 +723,49 @@ hr{
 	font-size:12pt;
 }
 
+/* Curriculum Vitea Section*/
+.cv-images{
+	width:30%;
+	height:30%;
+	float:left;
+	margin-bottom: 25px;
+}
+
+.cv-images-sub {
+	width:25%;
+	height:30%;
+	float:left;
+	margin-top: 27%;
+	margin-left: -27%;
+	padding-bottom: 25px;
+	overflow: hidden;
+	text-align:center;
+	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
+	color:#7e7e7e;
+	font-size:10pt;
+	font-style: italic;
+}
+
+.cv-titles{
+	width:68%;
+	float:right;
+	padding-top:10px;
+	font-family:'BebasNeueRegular',Arial, Helvetica, sans-serif;
+	color:#da803f;
+	font-size:20pt;
+	text-align:left;
+}
+
+.cv-text{
+	width: 68%;
+	float:right;
+	padding:0px 0px 20px 0px;
+	text-align:justify;
+	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
+	color:#7e7e7e;
+	font-size:12pt;
+}
+
 /**********************************************/
 /************** Footer Section ****************/
 /**********************************************/
@@ -776,6 +820,10 @@ hr{
 /**********************************************/
 /*************** Misc Section *****************/
 /**********************************************/
+
+.divider {
+	min-height: 1em;
+}
 
 .titles{
 	background-color:white;
@@ -2483,6 +2531,77 @@ textarea.contacttextarea{
 	box-shadow:0px 1px 5px #999;
 	background-repeat: no-repeat;
 	text-align:left;
+}
+
+/**********************************************/
+/******** Curriculum Vitea Section ************/
+/**********************************************/
+
+.cvbody{
+	width:68%;
+	float:right;
+}
+
+.cvbody ul{
+	/*width:100%;*/
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+
+.cvbody ul li{
+	display:block;
+	float:left;
+	list-style-type: none;
+	width:100%;
+}
+
+.cvbody ul li:first-child{
+	padding-top:20px;
+	display:block;
+	float:left;
+	list-style-type: none;
+	border-top:1px solid white;
+}
+
+.cvbody ul li.cvLabel a, #cvbody ul li.cvLabel a:visited{
+	padding:4px 8px 4px 18px;
+	margin:0px;
+	list-style-type: none;
+	background-image: url(../images/cross.png);
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+	text-decoration:none;
+	color:#7e7e7e;
+}
+
+.cvbody ul li.cvLabel a:hover{
+	padding:4px 8px 4px 18px;
+	margin:0px;
+	list-style-type: none;
+	background-image: url(../images/cross-hover.png);
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+	color:#d25809;
+	text-decoration:none;
+	cursor: default;
+}
+
+.cvbody ul li.cvContent a, .cvbody ul li.cvContent a:visited{
+	padding:4px 8px 4px 18px;
+	margin:0px;
+	list-style-type: none;
+	text-decoration:none;
+	color:#7e7e7e;
+}
+
+.cvbody ul li.cvContent a:hover{
+	padding:4px 8px 4px 18px;
+	margin:0px;
+	list-style-type: none;
+	color:#d25809;
+	text-decoration:none;
+	cursor: default;
 }
 
 /**********************************************/
