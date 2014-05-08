@@ -106,4 +106,26 @@ $(document).ready(function(){
 	$('.screen-reader-response').remove();
 	$('.wpcf7-validation-errors').remove();
 	// $('.wpcf7-response-output').remove();
+
+	//// Printing options ////
+	$('#downloadCV').click(function(){
+		// remove styles
+		$(".bti").fadeTo(0, 1);
+
+		// $('.boxes-half').each(function(i, obj) {
+		// 		$(this).removeClass('persHeight');
+		// 		$(this).removeClass('kennisHeight');
+		// 		$(this).removeClass('expHeight');
+		// 		$(this).removeClass('variaHeight');
+		// 		$(this).height( 'auto' );
+		// });
+
+		window.resizeTo(50, 50);
+		equalheight();
+
+		console.log(window.innerWidth + ' x ' + window.innerHeight);
+
+	    window.print();
+	    $(".bti").fadeTo(0, 0.4);
+	})
 });

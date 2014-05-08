@@ -108,7 +108,6 @@ hr{
 	width:auto;
 	float:right;
 	height:46px;
-	margin-right: 20.2%;
 }
 
 .socialfooter ul{
@@ -608,7 +607,7 @@ hr{
 	min-height: 142px;
 }
 .boxes-padding{
-	width:94%;
+	width:98%;
 	height:100% !important;
 	padding:3%;
 }
@@ -786,6 +785,15 @@ hr{
 
 #copyright a, #copyright a:visited,#copyright a:hover{
 	color:#7e7e7e;
+}
+
+#downloadCV {
+	width:auto;
+	float:left;
+	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding-top:8px;
+	margin-left: -22px;
 }
 
 .footerwrap{
@@ -3282,3 +3290,34 @@ textarea.contacttextarea{
 	font-family: 'BebasNeueRegular',Arial, Helvetica, sans-serif;
 	font-size:15pt;
 }
+
+
+/**********************************************/
+/************ Printing Section ****************/
+/**********************************************/
+
+/*@media print {
+	#main p {
+	  font-size:11pt;
+	  color: black;
+	}
+	 
+	#main img {
+	  display:block;
+	  page-break-after: avoid;
+	  page-break-inside: avoid;
+	}
+	 
+	#main ul, li {
+	  display:block;
+	  page-break-inside:avoid;
+	}
+
+	#header {display:none;}
+	#main {display:none;}
+	#comments {display:none;}
+	#sidebar {display:none;}
+	#footer {display:none;}
+	.site-description {display:none;}
+	.site-title {display:none;}
+}*/

@@ -1,0 +1,286 @@
+#header {display:none;}
+/*#main {display:none;}*/
+#comments {display:none;}
+.social {display:none;}
+#sidebar {display:none;}
+#footer {display:none;}
+.site-description {display:none;}
+.site-title {display:none;}
+.printhide {display:none;}
+
+body{
+	margin:0px;
+	padding:0px;
+	top:0;
+	background-image: none;
+	background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Verdana',Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0px;
+	color: #000 !important;
+	opacity: 100;
+}
+
+h1,h2{
+	font-size:16pt;
+}
+
+p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+/**********************************************/
+/*************** Main Section *****************/
+/**********************************************/
+
+#main{
+	width:100%;
+	float:left;
+	min-height:100px;
+	margin-top:-27px;
+}
+
+#main-wrap{
+	max-width:1000px;
+	float:none;
+	margin:0px auto;
+}
+
+/**********************************************/
+/*************** Boxes Section ****************/
+/**********************************************/
+
+/* full width*/
+.boxes-full{
+	background-color:white;
+	width:99.5%;
+	height:auto;
+	float:left;
+	margin:15px 0px;
+	border:1px solid #d5d5d5;
+	text-align:center;
+	position:relative;
+}
+
+.boxes-full h1{
+	text-align:center;
+	padding:0px;
+	margin:0px;
+}
+
+/* half width*/
+.boxes-half{
+	background-color:white;
+	width:48%;
+	height:auto;
+	float:left;
+	margin-top:15px;
+	margin-bottom:15px;
+	border:1px solid #d5d5d5;
+	text-align:center;
+	position:relative;
+	page-break-inside: avoid;
+}
+
+/* 3rd width*/
+.boxes-third{
+	background-color:white;
+	width:31.1%;
+	height:100%;
+	float:left;
+	margin:15px 1%;
+	border:1px solid #d5d5d5;
+	text-align:center;
+	position:relative;
+	min-height: 142px;
+}
+
+/* 3/4rd width*/
+.boxes-three-four{
+	background-color:white;
+	width:66.5%;
+	height:100%;
+	float:left;
+	margin:15px 0;
+	border:1px solid #d5d5d5;
+	text-align:center;
+	position:relative;
+	min-height: 142px;
+}
+.boxes-padding{
+	width:98%;
+	height:100% !important;
+	/*padding:3%;*/
+}
+
+
+.fullpadding{
+	padding:1%;
+	width:98%;
+}
+
+.box-arrow{
+	background-image: url(../images/arrow-down.png);
+	background-repeat: no-repeat;
+	margin-left: -16px;
+	position: absolute;
+	left: 50%;
+	bottom: -17px;
+	display:block;
+	width:32px;
+	height:18px;
+	-webkit-print-color-adjust:exact;
+}
+
+.boxes-first{
+	margin-left:0%;
+	margin-right:2%;
+}
+
+.boxes-last{
+	margin-right:0%;
+	margin-left:2%;
+}
+
+.boxes-half-last{
+	margin-right:0;
+	margin-left:1.4%;
+}
+
+
+/* Featured Section*/
+.bti{
+	width:90%;
+	float:left;
+}
+
+/* Curriculum Vitea Section*/
+.cv-titles{
+	width:98%;
+	float:left;
+	/*padding-top:10px;*/
+	font-family:'Verdana',Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:16pt;
+	text-align:center;
+}
+
+.cv-text{
+	float:left;
+	padding:0px 0px 20px 25px;
+	text-align:left;
+	font-family: Arial, sans-serif;
+	color:#000;
+	font-size:11pt;
+}
+
+/**********************************************/
+/*************** Misc Section *****************/
+/**********************************************/
+
+.divider {
+	min-height: 1em;
+}
+
+.titles{
+	background-color:white;
+	max-width:960px;
+	height:auto;
+	float:none;
+	margin:80px auto 28px auto;
+	border:1px solid #d5d5d5;
+	padding:10px 20px;
+	text-align:center;
+	position: relative;
+}
+
+.titlesnormal{
+	background-color:white;
+	max-width:960px;
+	height:auto;
+	float:none;
+	margin:0px auto 28px auto;
+	border:1px solid #d5d5d5;
+	padding:10px 20px;
+	text-align:center;
+	position: relative;
+}
+
+.titles span{
+	background-image: url(../images/arrow-down.png);
+	background-repeat: no-repeat;
+	margin-left: -16px;
+	position: absolute;
+	left: 50%;
+	bottom: -17px;
+	display:block;
+	width:32px;
+	height:18px;
+	-webkit-print-color-adjust:exact;
+}
+
+.titlesnormal span{
+	background-image: url(../images/arrow-down.png);
+	background-repeat: no-repeat;
+	margin-left: -16px;
+	position: absolute;
+	left: 50%;
+	bottom: -17px;
+	display:block;
+	width:32px;
+	height:18px;
+	-webkit-print-color-adjust:exact;
+}
+
+/**********************************************/
+/******** Curriculum Vitea Section ************/
+/**********************************************/
+
+.cvbody ul{
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+
+.cvbody ul li{
+	display:block;
+	float:left;
+	list-style-type: none;
+	width:100%;
+}
+
+.cvbody ul li:first-child{
+	padding-top:20px;
+	display:block;
+	float:left;
+	list-style-type: none;
+	border-top:1px solid white;
+}
+
+.cvbody ul li.cvLabel a, #cvbody ul li.cvLabel a:visited{
+	padding:4px 8px 4px 18px;
+	margin:0px;
+	list-style-type: none;
+	background-image: url(../images/cross.png);
+	background-repeat: no-repeat;
+	background-position: 0px 6px;
+	text-decoration:none;
+	color:#000;
+	-webkit-print-color-adjust:exact;
+}
+
+.cvbody ul li.cvContent {
+	padding-left: 18px;
+	width: 100%;
+}
+
+.cvbody ul li.cvContent a, .cvbody ul li.cvContent a:visited{
+	margin:0px;
+	list-style-type: none;
+	text-decoration:none;
+	color:#000;
+}

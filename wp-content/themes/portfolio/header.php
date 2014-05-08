@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 <link rel="shortcut icon" href="<?php echo yer_favicon(); ?>" />
-<link href="<?php echo THEME_URL; ?>/css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/main.css"  type="text/css">
+<link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/print.css" type="text/css" media="print" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="<?php echo THEME_URL; ?>/js/jquery.nivo.slider.js" type="text/javascript"</script>
@@ -38,6 +39,13 @@
 <script type="text/javascript">
 	//// Script for equal heights
 	$(document).ready(function(){
+		equalheight();
+	})
+	$(window).resize(function(){
+		equalheight();	
+	})
+
+	function equalheight(){
 		// homepage
 		$(".homeHeight").eqHeight();
 		$(".linkHeight").eqHeight();
@@ -47,7 +55,7 @@
 		$(".kennisHeight").eqHeight();
 		$(".expHeight").eqHeight();
 		$(".variaHeight").eqHeight();
-	})
+	}
 	
 </script>
 </head>
