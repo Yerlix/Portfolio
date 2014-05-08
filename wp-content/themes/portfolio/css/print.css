@@ -1,6 +1,7 @@
 #header {display:none;}
 /*#main {display:none;}*/
 #comments {display:none;}
+#sliderwrap {display:none;}
 .social {display:none;}
 #sidebar {display:none;}
 #footer {display:none;}
@@ -31,6 +32,10 @@ h1,h2{
 p{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 10pt;
+}
+
+img {
+	display: none;
 }
 
 /**********************************************/
@@ -149,6 +154,60 @@ p{
 .boxes-half-last{
 	margin-right:0;
 	margin-left:1.4%;
+}
+
+/* Featured Section*/
+.bti{
+	width:100%;
+	float:left;
+	/*cursor:pointer;*/
+}
+
+.featured-images{
+	width:30%;
+	height:30%;
+	float:right;
+}
+
+.featured-titles{
+	width:98%;
+	float:left;
+	padding-top:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:16pt;
+	text-align:left;
+}
+
+.featured-text{
+	width:98%;
+	float:left;
+	padding:0px 0px 20px 0px;
+	text-align:justify;
+	font-family: Arial, sans-serif;
+	color:#000;
+	font-size:11pt;
+}
+
+/* About Section*/
+.about-titles{
+	width:98%;
+	float:left;
+	padding-top:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#da803f;
+	font-size:16pt;
+	text-align:left;
+}
+
+.about-text{
+	width: 98%;
+	float:left;
+	padding:0px 0px 20px 0px;
+	text-align:left;
+	font-family: Arial, sans-serif;
+	color:#000;
+	font-size:11pt;
 }
 
 
