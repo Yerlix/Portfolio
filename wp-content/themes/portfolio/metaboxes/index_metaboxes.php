@@ -51,7 +51,7 @@ function rw_maybe_include()
 	$post_id = (int) $post_id;
 
 	// Check for page template
-	$checked_templates = array( 'page-home.php', 'default' );
+	$checked_templates = array( 'page-home.php' );
 
 	$template = get_post_meta( $post_id, '_wp_page_template', true );
 	if ( in_array( $template, $checked_templates ) )
