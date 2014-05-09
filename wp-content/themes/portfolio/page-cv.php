@@ -10,7 +10,7 @@ get_header();
 <div id="main">
 
     <!-- Start H1 Title -->
-    <div class="titles">
+    <div class="titlesnormal">
         <h1><?php if (yer_get_meta('cvtitle')) { echo yer_get_meta('cvtitle'); } else { echo "Persoonlijk" ; } ?></h1>
         
         <span></span>
@@ -18,7 +18,11 @@ get_header();
     </div>
     <!-- End H1 Title -->
     
-    <?php get_template_part( 'content', 'cv' ); ?>
+    <!-- Start Main Body Wrap -->
+    <div id="main-wrap">
+        <?php get_template_part( 'content', 'cv' ); ?>
+        <?php get_template_part( 'content', 'usefullinks' ); ?>
+    </div>
 
 </div>
 

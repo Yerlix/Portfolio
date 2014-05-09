@@ -4,6 +4,7 @@ add_action( 'init', 'create_pro' );
 function create_pro() {
     $args = array(
         'labels' => post_pro_labels( 'Project' ),
+        'taxonomies' => array('category'),
         'public' => true,
         'menu_icon' => 'dashicons-lightbulb',
         'publicly_queryable' => true,
@@ -15,7 +16,7 @@ function create_pro() {
         'has_archive' => true,
         'hierarchical' => false,
         'menu_position' => 11,
-        'supports' => array('title', 'editor')
+        'supports' => array('title', 'editor', 'taxonomy')
     );
 
     register_post_type( 'project', $args );

@@ -948,6 +948,22 @@ function yer_favicon() {
 }
 
 /**
+ * Display custom Contact image
+ */
+function yer_contactimg() {
+    $contactimg = yer_get_option('contactimg');
+    return $contactimg ? $contactimg : '';
+}
+
+/**
+ * Display custom project image
+ */
+function yer_projectimg() {
+    $projectimg = yer_get_option('projectimg');
+    return $projectimg ? $projectimg : '';
+}
+
+/**
  * Get template part
  * 
  * @param string $slug

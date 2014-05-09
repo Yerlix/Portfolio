@@ -1,6 +1,3 @@
-<!-- Start Main Body Wrap -->
-    <div id="main-wrap">
-    
     	<!-- Start Featured Boxes -->
         <div class="boxes-third boxes-first">
         

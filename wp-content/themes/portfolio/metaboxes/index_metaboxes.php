@@ -173,39 +173,5 @@ function create_home_metaboxes(){
 		),
 	);
 
-	$meta_boxes[] = array(
-		'id' => 'link',
-	    'title' => __( 'Link Fields', 'rwmb' ),
-	    'pages' => array( 'post', 'page' ),
-	    'context' => 'normal',
-	    'priority' => 'high',
-	    'autosave' => true,
-		'fields' => array(
-			array(
-				'id'		=> "{$prefix}linktitle",
-				'name'	=> __( "Title", 'rwmb' ),
-				'type'	=> "text",
-			),
-			array(
-				'id'		=> "{$prefix}linkcontact",
-				'name'	=> __( "Contact content", 'rwmb' ),
-				'type'	=> "text",
-			),
-			array(
-				'id'		=> "{$prefix}linkprojects",
-				'name'	=> __( "Projects contenct", 'rwmb' ),
-				'type'	=> "text",
-			),
-			// IMAGE UPLOAD
-			array(
-				'name'             => __( 'Link images', 'rwmb' ),
-				'id'               => "{$prefix}linkimgs",
-				'type'             => 'plupload_image',
-				'max_file_uploads' => 2,
-				'desc' => 'First one is for contact, second for projects',
-			),
-		),
-	);
-
 	return $meta_boxes;
 }

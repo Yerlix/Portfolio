@@ -18,7 +18,11 @@ get_header();
     </div>
     <!-- End H1 Title -->
     
-    <?php get_template_part('content', 'contact'); ?>
+    <!-- Start Main Body Wrap -->
+    <div id="main-wrap">
+        <?php get_template_part( 'content', 'contact' ); ?>
+        <?php get_template_part( 'content', 'usefullinks' ); ?>
+    </div>
 
 </div>
 

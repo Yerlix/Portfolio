@@ -704,7 +704,7 @@ hr{
 
 .about-titles{
 	width:68%;
-	float:right;
+	float:left;
 	padding-top:10px;
 	font-family:'BebasNeueRegular',Arial, Helvetica, sans-serif;
 	color:#da803f;
@@ -714,7 +714,7 @@ hr{
 
 .about-text{
 	width: 68%;
-	float:right;
+	float:left;
 	padding:0px 0px 20px 0px;
 	text-align:justify;
 	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
@@ -736,6 +736,17 @@ hr{
 .cv-text{
 	float:left;
 	padding:0px 0px 20px 25px;
+	text-align:justify;
+	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
+	color:#7e7e7e;
+	font-size:12pt;
+}
+
+/* Portfolio section */
+.portfolio-text{
+	width: 96%;
+	float:left;
+	padding:0px 0px 20px 0px;
 	text-align:justify;
 	font-family:'HelveticaLTStdRoman',Arial, sans-serif;
 	color:#7e7e7e;
@@ -997,6 +1008,87 @@ hr{
 	color:#d25809;
 	text-decoration:none;
 }
+
+/***********************************/
+/********** Useful links ***********/
+/***********************************/
+ .usefulwrap{
+	width:100%;
+	float:left;
+}
+
+.usefulwrap:hover{
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+.usefulwrap .title{
+	width:94%;
+	float:right;
+	padding:3%;
+	font-family: 'BebasNeueRegular',Arial, Helvetica, sans-serif;
+	font-size:16pt;
+	color:#da640f;
+	text-align:right;
+	position: relative;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.usefulwrap .title .titlearrow{
+	background-image: url(../images/arrow-down.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 10%;
+	bottom: -17px;
+	display:block;
+	width:32px;
+	height:18px;
+}
+
+.usefulwrap .usefulimage{
+	width:100%;
+	float:left;
+	overflow: hidden;
+	border:0px;
+}
+
+.usefulwrap .usefulimage img{
+	width:100%;
+	border:0px;
+}
+
+.usefulwrap .usefulimage img a{
+	width:100%;
+	border:0px;
+}
+
+.usefulwrap .text{
+	width:94%;
+	float:left;
+	padding:3%;
+	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	color:#7e7e7e;
+	text-align:center;
+	position: relative;
+	border-top: 1px solid #d5d5d5;
+}
+
+.usefulwrap .text .textarrow{
+	background-image: url(../images/arrow-up.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 10%;
+	top: -17px;
+	display:block;
+	width:32px;
+	height:18px;
+}
+
+/************************************/
 
 #latest-testimonial{
 	width:30%;
@@ -1789,11 +1881,6 @@ div.tab_contents_active {
 	float:left;
 }
 
-#portfolio-filter{
-	width:80%;
-	float:left;
-}
-
 #portfolio-filter-choice{
 	width:20%;
 	float:right;
@@ -1830,6 +1917,7 @@ div.tab_contents_active {
 .portfoliowrap{
 	width:100%;
 	float:left;
+	border: 1px solid #D5D5D5;
 }
 
 .portfoliowrap:hover{

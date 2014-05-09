@@ -1,5 +1,4 @@
-<!-- Start Main Body Wrap -->
-    <div id="main-wrap">
+
 
         <!-- Start About titles -->
         <!-- <div class="boxes-full">
@@ -51,66 +50,3 @@
             <span class="box-arrow"></span>
         </div>
         <!-- End Featured Boxes -->
-
-        <!-- Start Useful links titles -->
-        <div class="printhide">
-            <div class="boxes-full">
-                <div class="boxes-padding fullpadding">
-                    <h1><?php if (yer_get_meta('linktitle')) { echo yer_get_meta('linktitle'); } else { echo "Nuttige links" ; } ?></h1>
-                </div>
-                <span class="box-arrow"></span>
-            </div>
-            <!-- End Useful links titles -->
-            
-            <!-- Start Useful links -->
-        
-            <?php 
-                $uploadedimgs = rwmb_meta( 'yer_linkimgs', 'type=plupload_image' );
-                $images = array();
-                foreach ($uploadedimgs as $image) {
-                    $images[] = $image;
-                }
-
-                // Get contact page id
-                $contactPageID = get_ID_by_slug('contact');
-            ?>
-            <div class="boxes-half boxes-first linkHeight">
-              <div class="portfoliowrap">
-                <div class="title">
-                    Contact
-                    <span class="titlearrow"></span>
-                </div>
-                <div class="portfolioimage">
-                    <a href="<?php echo get_page_link($contactPageID); ?>" rel="prettyPhoto">
-                        <img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>"/>
-                    </a>
-                </div>
-                <div class="text">
-                    <?php if (yer_get_meta('linkcontact')) echo yer_get_meta('linkcontact'); ?>
-                    <span class="textarrow"></span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="boxes-half boxes-half-last linkHeight">
-              <div class="portfoliowrap">
-                <div class="title">
-                    Projects
-                    <span class="titlearrow"></span>
-                </div>
-                <div class="portfolioimage">
-                    <a href="" rel="prettyPhoto" title="Lorem ipsum dolor sit amet">
-                        <img src="<?php echo $images[1]['full_url']; ?>" alt="<?php echo $images[1]['alt']; ?>"/>
-                    </a>
-                </div>
-                <div class="text">
-                    <?php if (yer_get_meta('linkprojects')) echo yer_get_meta('linkprojects'); ?>
-                    <span class="textarrow"></span>
-                </div>
-              </div>
-            </div>
-        </div>
-        <!-- End Useful links -->
-    
-    </div>
-    <!-- End Main Body Wrap

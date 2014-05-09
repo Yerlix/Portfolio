@@ -28,6 +28,20 @@ function yerlix_get_options() {
         "type" => "upload");
 
     $options[] = array( 
+        "name" => "Upload a contact image",
+        "desc" => "Upload or put the link of your contact image",
+        "id" => "yer_contactimg",
+        "std" => "",
+        "type" => "upload");
+
+    $options[] = array( 
+        "name" => "Upload a project image",
+        "desc" => "Upload or put the link of your project image",
+        "id" => "yer_projectimg",
+        "std" => "",
+        "type" => "upload");
+
+    $options[] = array( 
         "name" => "Copyrights",
         "desc" => "Your copyright message.",
         "id" => "yer_copyrights",

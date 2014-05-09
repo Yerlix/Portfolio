@@ -112,14 +112,6 @@ $(document).ready(function(){
 		// remove styles
 		$(".bti").fadeTo(0, 1);
 
-		// $('.boxes-half').each(function(i, obj) {
-		// 		$(this).removeClass('persHeight');
-		// 		$(this).removeClass('kennisHeight');
-		// 		$(this).removeClass('expHeight');
-		// 		$(this).removeClass('variaHeight');
-		// 		$(this).height( 'auto' );
-		// });
-
 		window.resizeTo(50, 50);
 		equalheight();
 
@@ -128,4 +120,5 @@ $(document).ready(function(){
 	    window.print();
 	    $(".bti").fadeTo(0, 0.4);
 	})
+	//// End Printing options ////
 });

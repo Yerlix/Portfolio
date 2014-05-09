@@ -10,11 +10,14 @@
 <link rel="stylesheet" href="<?php echo THEME_URL; ?>/css/print.css" type="text/css" media="print" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="<?php echo THEME_URL; ?>/js/jquery.nivo.slider.js" type="text/javascript"</script>
+<script src="<?php echo THEME_URL; ?>/js/jquery.nivo.slider.js" type="text/javascript"></script>
+<script src="<?php echo THEME_URL; ?>/js/jquery.isotope.min.js" type="text/javascript"></script>
+<script src="<?php echo THEME_URL; ?>/js/jquery.prettyPhoto.js" type="text/javascript"></script>
 <script src="<?php echo THEME_URL; ?>/js/twitter.js"></script>    
 <script src="<?php echo THEME_URL; ?>/js/custom.js"></script>   
 <script src="<?php echo THEME_URL; ?>/js/eqHeight.js"></script>   
 <script src="<?php echo THEME_URL; ?>/js/contact_validation.js"></script>   
+<script src="<?php echo THEME_URL; ?>/js/portfolio_settings.js"></script>   
 <script>
 	//// Start Simple Sliders ////
 	$(function() {
@@ -34,7 +37,12 @@
 	
 	}
 	//// End Simple Sliders //// 
-</script> 
+</script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
 
 <script type="text/javascript">
 	//// Script for equal heights

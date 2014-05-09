@@ -38,16 +38,6 @@ include "metaboxes/contact_metaboxes.php";
 include "metaboxes/cv_metaboxes.php";
 include("metaboxes/comp_metaboxes.php");
 
-
-/**
- * Adding scripts to WP
- */
-function custom_scripts() {
-	var_dump(get_template_directory_uri());
-	wp_enqueue_script( 'contact_validation', get_template_directory_uri() . '/js/contact_validation.js' );
-}
-add_action( 'wp_enqueue_scripts', 'custom_scripts' );
-
 /**
  * Page ID by slug
  */

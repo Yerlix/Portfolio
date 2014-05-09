@@ -106,6 +106,3 @@
         <span class="box-arrow"> </span>
     </div>
     <!-- End Latest Project titles -->
-
-</div>
-<!-- End Main Body Wrap -->
