@@ -23,10 +23,10 @@ function com_register_meta_boxes()
 
 		'fields' => array(
 			array(
-				'name' => __( 'Image', 'rwmb' ),
-				'id'   => $prefix . 'logo',
-				'type' => 'plupload_image',
-				'max_file_uploads' => 1,
+				'name' => __( 'Bewijzen', 'rwmb' ),
+				'id'   => $prefix . 'bewijzen',
+				'type' => 'file_advanced',
+				'max_file_uploads' => 4,
 			),
 			// CHECKBOX LIST
             array(
@@ -35,8 +35,8 @@ function com_register_meta_boxes()
                 'type' => 'radio',
                 // Options of checkboxes, in format 'value' => 'Label'
                 'options' => array(
-                    'value1' => __( 'Soft skill', 'rwmb' ),
-                    'value2' => __( 'Hard skill', 'rwmb' ),
+                    'soft' => __( 'Soft skill', 'rwmb' ),
+                    'hard' => __( 'Hard skill', 'rwmb' ),
                 ),
             ),
 		)

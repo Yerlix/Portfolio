@@ -130,7 +130,7 @@ add_action('admin_init', 'yer_admin_table_columns', 100);
  * Change footer
  */
 function yer_admin_remove_footer_admin() {
-	echo '<span id="footer-thankyou">Developed by <a href="'.'http://www.yerlixs.com'.'" target="_blank">Alethemes</a></span>';
+	echo '<span id="footer-thankyou">Developed by <a href="'.'http://www.yerlix.be'.'" target="_blank">Yoeri Stessens</a></span>';
 }
 add_filter('admin_footer_text', 'yer_admin_remove_footer_admin');
 

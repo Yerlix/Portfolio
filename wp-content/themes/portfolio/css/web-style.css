@@ -1702,14 +1702,14 @@ div.tab_contents_active {
 }
 
 .toggletitle{
-	width:94%;
+	width:98%;
 	float:left;
-	padding:3%;
+	padding:1%;
 	color:#807f7f;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	font-size: 12pt;
 	border: 1px solid #DDD;
-	/*cursor:pointer;*/
+	cursor:pointer;
 	background-color: #E6E6E6;
 	background-image:url(../images/toggles.png);
 	background-repeat: no-repeat;
@@ -1721,9 +1721,9 @@ div.tab_contents_active {
 }
 
 .togglecontent{
-	width:94%;
+	width:98%;
 	float:left;
-	padding:3%;
+	padding:1%;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	font-size: 12pt;
 	color:#666666;
@@ -2522,6 +2522,7 @@ textarea.contacttextarea{
 /******** Curriculum Vitea Section ************/
 /**********************************************/
 
+/* List styles */
 .cvbody ul{
 	/*width:100%;*/
 	float:left;
@@ -2579,6 +2580,76 @@ textarea.contacttextarea{
 }
 
 .cvbody ul li.cvContent a:hover{
+	/*padding:4px 8px 4px 18px;*/
+	margin:0px;
+	list-style-type: none;
+	color:#d25809;
+	text-decoration:none;
+	cursor: default;
+}
+
+/**********************************************/
+/********* Competentions Section **************/
+/**********************************************/
+
+/* List styles */
+.compbody ul{
+	/*width:100%;*/
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+
+.compbody ul li{
+	display:block;
+	float:left;
+	list-style-type: none;
+	width:100%;
+}
+
+.compbody ul li:first-child{
+	padding-top:20px;
+	display:block;
+	float:left;
+	list-style-type: none;
+	border-top:1px solid white;
+}
+
+.compbody ul li.compLabel a, #compbody ul li.compLabel a:visited{
+	padding:4px 8px 4px 28px;
+	margin:0px;
+	list-style-type: none;
+	background-image: url(../images/cross.png);
+	background-repeat: no-repeat;
+	background-position: 10px 6px;
+	text-decoration:none;
+	color:#7e7e7e;
+}
+
+.compbody ul li.compLabel a:hover{
+	padding:4px 8px 4px 28px;
+	margin:0px;
+	list-style-type: none;
+	background-image: url(../images/cross-hover.png);
+	background-repeat: no-repeat;
+	background-position: 10px 6px;
+	color:#d25809;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.compbody ul li.compContent {
+	padding-left: 18px;
+}
+
+.compbody ul li.compContent a, .compbody ul li.compContent a:visited{
+	margin:0px;
+	list-style-type: none;
+	text-decoration:none;
+	color:#7e7e7e;
+}
+
+.compbody ul li.compContent a:hover{
 	/*padding:4px 8px 4px 18px;*/
 	margin:0px;
 	list-style-type: none;
