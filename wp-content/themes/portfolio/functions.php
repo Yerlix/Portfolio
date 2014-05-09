@@ -36,7 +36,7 @@ define("THEME_URL", get_template_directory_uri());
 include "metaboxes/index_metaboxes.php";
 include "metaboxes/contact_metaboxes.php";
 include "metaboxes/cv_metaboxes.php";
-// include("metaboxes/competenties_metaboxes.php");
+include("metaboxes/comp_metaboxes.php");
 
 
 /**

@@ -27,6 +27,7 @@
         ?>
     <?php endwhile; ?>
 <?php endif; ?>
+<?php wp_reset_postdata(); ?>
 
 <!-- Start Main Body Wrap -->
 <div id="main-wrap">
@@ -38,14 +39,12 @@
         	
             <!-- Start Softskills Section -->
         	<div class="splitnone">
-            	<h3>Softskills</h3>
-                <p>Tekst</p>
+                <p><?php the_content(); ?></p>
             </div>
             <div class="clear"></div>
             <hr />
             <div class="splitnone">
-            
-                <h3>Toggle Section</h3>
+                <h3><?php if (yer_get_meta('compsoft')) echo yer_get_meta('compsoft'); ?></h3>
                 
                 <!-- Start Toggle Softskills -->
                 <?php if (count($softskills) > 0) { ?>
@@ -74,16 +73,10 @@
             <div class="clear"></div>
             <hr />
 
-            <!-- Start None Split Section -->
+            <!-- Start Toggle Hardskills -->
             <div class="splitnone">
-                <h3>Title</h3>
-                <p>Tekst</p>
-            </div>
-            <div class="clear"></div>
-            <hr />
-            <div class="splitnone">
-                <h3>Toggle Section</h3>
-                <!-- Start Toggle Hardskills -->
+                <h3><?php if (yer_get_meta('comphard')) echo yer_get_meta('comphard'); ?></h3>
+                
                 <?php if (count($hardskills) > 0) { ?>
                     <div class="togglewrap">
                         <?php foreach ($hardskills as $skill) { ?>
