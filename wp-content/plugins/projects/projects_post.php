@@ -1,11 +1,11 @@
 <?php
 
-add_action( 'init', 'create_comp' );
-function create_comp() {
+add_action( 'init', 'create_pro' );
+function create_pro() {
     $args = array(
-        'labels' => post_comp_labels( 'Competentie' ),
-        'public' => false,
-        'menu_icon' => 'dashicons-welcome-learn-more',
+        'labels' => post_pro_labels( 'Project' ),
+        'public' => true,
+        'menu_icon' => 'dashicons-lightbulb',
         'publicly_queryable' => true,
         'show_ui' => true,
         'show_in_menu' => true,
@@ -18,10 +18,10 @@ function create_comp() {
         'supports' => array('title', 'editor')
     );
 
-    register_post_type( 'competentie', $args );
+    register_post_type( 'project', $args );
 }
 
-function post_comp_labels( $singular, $plural = '' )
+function post_pro_labels( $singular, $plural = '' )
 {
     if( $plural == '') $plural = $singular .'s';
    
@@ -40,25 +40,25 @@ function post_comp_labels( $singular, $plural = '' )
     );
 }
 
-add_filter('post_updated_messages', 'comp_updated_messages');
-function comp_updated_messages( $messages ) {
+add_filter('post_updated_messages', 'pro_updated_messages');
+function pro_updated_messages( $messages ) {
     global $post, $post_ID;
 
-    $messages['competentie'] = array(
+    $messages['projects'] = array(
 	    0 => '', // Unused. Messages start at index 1.
-	    1 => sprintf( __('Competentie updated. <a href="%s">View competentie</a>'), esc_url( get_permalink($post_ID) ) ),
+	    1 => sprintf( __('Projects updated. <a href="%s">View projects</a>'), esc_url( get_permalink($post_ID) ) ),
 	    2 => __('Custom field updated.'),
 	    3 => __('Custom field deleted.'),
-	    4 => __('Competentie updated.'),
+	    4 => __('Projects updated.'),
 	    /* translators: %s: date and time of the revision */
-	    5 => isset($_GET['revision']) ? sprintf( __('Competentie restored to revision from %s'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
-	    6 => sprintf( __('Competentie published. <a href="%s">View competentie</a>'), esc_url( get_permalink($post_ID) ) ),
-	    7 => __('Competentie saved.'),
-	    8 => sprintf( __('Competentie submitted. <a target="_blank" href="%s">Preview competentie</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
-	    9 => sprintf( __('Competentie scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview competentie</a>'),
+	    5 => isset($_GET['revision']) ? sprintf( __('Projects restored to revision from %s'), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+	    6 => sprintf( __('Projects published. <a href="%s">View projects</a>'), esc_url( get_permalink($post_ID) ) ),
+	    7 => __('Projects saved.'),
+	    8 => sprintf( __('Projects submitted. <a target="_blank" href="%s">Preview projects</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+	    9 => sprintf( __('Projects scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview projects</a>'),
 	    // translators: Publish box date format, see php.net/date
 	    date_i18n( __( 'M j, Y @ G:i' ), strtotime( $post->post_date ) ), esc_url( get_permalink($post_ID) ) ),
-	    10 => sprintf( __('Competentie draft updated. <a target="_blank" href="%s">Preview competentie</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
+	    10 => sprintf( __('Projects draft updated. <a target="_blank" href="%s">Preview projects</a>'), esc_url( add_query_arg( 'preview', 'true', get_permalink($post_ID) ) ) ),
     );
 
     return $messages;

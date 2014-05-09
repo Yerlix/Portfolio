@@ -17,8 +17,8 @@ function com_register_meta_boxes()
 
 	// 1st meta box
 	$meta_boxes[] = array(
-		'id'    => 'logo',
-		'title' => __( 'Front image', 'rwmb' ),
+		'id'    => 'skills',
+		'title' => __( 'Skills', 'rwmb' ),
 		'pages' => $post_types,
 
 		'fields' => array(

@@ -8,7 +8,7 @@ Author URI:
 License: GPLv2 or later
 */
 
-function compettenties_activation() {
+function competenties_activation() {
 }
 register_activation_hook(__FILE__, 'competenties_activation');
 

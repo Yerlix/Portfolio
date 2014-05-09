@@ -11,7 +11,7 @@ get_header();
     <!-- Start H1 Title -->
     <div class="titlesnormal">
     
-    	<h1><?php if (yer_get_meta('comptitle')) { echo yer_get_meta('comptitle'); } ?></h1>
+    	<h1><?php if (yer_get_meta('comptitle')) echo yer_get_meta('comptitle'); ?></h1>
         
         <span></span>
     
