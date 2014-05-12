@@ -42,6 +42,13 @@ function yerlix_get_options() {
         "type" => "upload");
 
     $options[] = array( 
+        "name" => "Upload a competences image",
+        "desc" => "Upload or put the link of your competences image",
+        "id" => "yer_compimg",
+        "std" => "",
+        "type" => "upload");
+
+    $options[] = array( 
         "name" => "Copyrights",
         "desc" => "Your copyright message.",
         "id" => "yer_copyrights",

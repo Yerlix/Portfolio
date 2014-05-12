@@ -9,7 +9,6 @@
     <!-- End Useful links titles -->
     
     <!-- Start Useful links -->
-
     <?php 
         $contactimg = yer_contactimg();
         $projectimg = yer_projectimg();
@@ -19,9 +18,16 @@
 
         // Get project page id
         $projectPageID = get_ID_by_slug('projecten');
+
+        // Get competences page id
+        $competencesPageID = get_ID_by_slug('competenties');
+
+        $template = get_post_meta( $post->ID, '_wp_page_template', true );
+        // var_dump($template);
     ?>
+    <?php if ( $template !== "page-contact.php") { ?>
     <a href="<?php echo get_page_link($contactPageID); ?>">
-        <div class="boxes-half boxes-half-last linkHeight">
+        <div class="boxes-half boxes-first linkHeight">
             <div class="usefulwrap">
                 <div class="title">
                     Contact
@@ -36,6 +42,9 @@
             </div>
         </div>
     </a>
+    <?php } else {
+        not_usefull_link($post);
+    } ?>
     
     <a href="<?php echo get_page_link($projectPageID); ?>">
         <div class="boxes-half boxes-half-last linkHeight">
@@ -54,4 +63,39 @@
         </div>
     </a>
 </div>
+
+
+
+<?php function not_usefull_link($post) {
+    $template = get_post_meta( $post->ID, '_wp_page_template', true );
+    switch ($template) {
+        case 'page-contact.php':
+            $compimg = yer_compimg();
+            $competentiesPageID = get_ID_by_slug('competenties');
+            ?>
+            <a href="<?php echo get_page_link($competentiesPageID); ?>">
+                <div class="boxes-half boxes-first linkHeight">
+                    <div class="usefulwrap">
+                        <div class="title">
+                            Competenties
+                            <span class="titlearrow"></span>
+                        </div>
+                        <div class="usefulimage">
+                            <img src="<?php echo $compimg; ?>" alt="Contacteer mij"/>
+                        </div>
+                        <div class="text">
+                            <span class="textarrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <?php
+            break;
+
+        case 'page-projects.php':
+            # code...
+            break;
+
+    } ?>
+<?php } ?>
 <!-- End Useful links -->

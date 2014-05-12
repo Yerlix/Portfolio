@@ -964,6 +964,14 @@ function yer_projectimg() {
 }
 
 /**
+ * Display custom competences image
+ */
+function yer_compimg() {
+    $compimg = yer_get_option('compimg');
+    return $compimg ? $compimg : '';
+}
+
+/**
  * Get template part
  * 
  * @param string $slug
