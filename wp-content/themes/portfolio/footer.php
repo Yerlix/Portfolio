@@ -50,5 +50,28 @@
 		<!-- Start Scroll To Top Div -->
 		<div id="scrolltab"></div>
 		<!-- End Scroll To Top Div -->
+
+
+			<script type="text/javascript">
+			//// Script for equal heights
+			$(document).ready(function(){
+				equalheight();
+			})
+			$(window).resize(function(){
+				equalheight();	
+			})
+
+			function equalheight(){
+				// homepage
+				$(".homeHeight").eqHeight();
+				$(".linkHeight").eqHeight();
+
+				// cv page
+				$(".persHeight").eqHeight();
+				$(".kennisHeight").eqHeight();
+				$(".expHeight").eqHeight();
+				$(".variaHeight").eqHeight();
+			}	
+		</script>
 	</body>
 </html>

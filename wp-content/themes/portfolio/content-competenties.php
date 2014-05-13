@@ -28,9 +28,6 @@
     <?php endwhile; ?>
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
-
-<!-- Start Main Body Wrap -->
-<div id="main-wrap">
     
     <!-- Start -->
     <div class="boxes-full">

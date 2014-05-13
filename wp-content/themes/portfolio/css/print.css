@@ -15,6 +15,7 @@ body{
 	top:0;
 	background-image: none;
 	background-repeat: repeat;
+	margin-top: 50px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -75,6 +76,7 @@ img {
 	text-align:center;
 	padding:0px;
 	margin:0px;
+	page-break-before: always;
 }
 
 /* half width*/

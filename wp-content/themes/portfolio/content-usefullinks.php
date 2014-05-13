@@ -46,6 +46,7 @@
         not_usefull_link($post);
     } ?>
     
+    <?php if ($template !== "page-projects.php") { ?>
     <a href="<?php echo get_page_link($projectPageID); ?>">
         <div class="boxes-half boxes-half-last linkHeight">
             <div class="usefulwrap">
@@ -62,40 +63,44 @@
             </div>
         </div>
     </a>
+    <?php } else {
+        not_usefull_link($post);
+    } ?>
 </div>
 
 
 
 <?php function not_usefull_link($post) {
     $template = get_post_meta( $post->ID, '_wp_page_template', true );
+    $compimg = yer_compimg();
+    $competentiesPageID = get_ID_by_slug('competenties');
+
     switch ($template) {
         case 'page-contact.php':
-            $compimg = yer_compimg();
-            $competentiesPageID = get_ID_by_slug('competenties');
-            ?>
-            <a href="<?php echo get_page_link($competentiesPageID); ?>">
-                <div class="boxes-half boxes-first linkHeight">
-                    <div class="usefulwrap">
-                        <div class="title">
-                            Competenties
-                            <span class="titlearrow"></span>
-                        </div>
-                        <div class="usefulimage">
-                            <img src="<?php echo $compimg; ?>" alt="Contacteer mij"/>
-                        </div>
-                        <div class="text">
-                            <span class="textarrow"></span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <?php
+                $classes = 'boxes-half boxes-first linkHeight';
             break;
 
         case 'page-projects.php':
-            # code...
+            $classes = 'boxes-half boxes-half-last linkHeight';
             break;
 
     } ?>
+
+    <a href="<?php echo get_page_link($competentiesPageID); ?>">
+        <div class="<?php echo $classes; ?>">
+            <div class="usefulwrap">
+                <div class="title">
+                    Competenties
+                    <span class="titlearrow"></span>
+                </div>
+                <div class="usefulimage">
+                    <img src="<?php echo $compimg; ?>" alt="Contacteer mij"/>
+                </div>
+                <div class="text">
+                    <span class="textarrow"></span>
+                </div>
+            </div>
+        </div>
+    </a>
 <?php } ?>
 <!-- End Useful links -->

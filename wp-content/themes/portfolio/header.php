@@ -44,7 +44,7 @@
   });
 </script>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 	//// Script for equal heights
 	$(document).ready(function(){
 		equalheight();
@@ -63,9 +63,8 @@
 		$(".kennisHeight").eqHeight();
 		$(".expHeight").eqHeight();
 		$(".variaHeight").eqHeight();
-	}
-	
-</script>
+	}	
+</script> -->
 </head>
 
 <body>
