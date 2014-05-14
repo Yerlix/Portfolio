@@ -85,6 +85,13 @@ function create_home_metaboxes(){
 				'max_file_uploads' => 4,
 				'desc' => 'Dimensions: 986 × 339',
 			),
+			array(
+				'id'	=> "{$prefix}imgurls",
+				'name'	=> __( "Afbeeldings urls", 'rwmb' ),
+				'desc'	=> "In zelfde volgorde als de afbeeldingen",
+				'type'	=> "text",
+				'clone' => true
+				),
 			// HEADING
             array(
                 'type' => 'heading',

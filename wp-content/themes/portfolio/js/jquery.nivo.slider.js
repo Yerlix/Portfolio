@@ -28,7 +28,7 @@
         //Get this slider
         var slider = $(element);
         slider.data('nivo:vars', vars);
-        slider.css('position','relative');
+        slider.css('position','fixed');
         slider.addClass('nivoSlider');
         
         //Find our slider children
