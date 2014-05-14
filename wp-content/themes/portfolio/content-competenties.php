@@ -2,6 +2,8 @@
     // Get all competentions
     $args = array(
         'post_type' => 'competentie',
+        'orderby'   => 'menu_order',
+        'order'     => 'ASC'
     );
     $query = new WP_Query($args); 
 

@@ -5,7 +5,7 @@ function create_pro() {
     $args = array(
         'labels' => post_pro_labels( 'Project' ),
         'taxonomies' => array('category'),
-        'public' => true,
+        'public' => false,
         'menu_icon' => 'dashicons-lightbulb',
         'publicly_queryable' => true,
         'show_ui' => true,
@@ -13,8 +13,8 @@ function create_pro() {
         'query_var' => true,
         'rewrite' => true,
         'capability_type' => 'post',
-        'has_archive' => true,
-        'hierarchical' => false,
+        'has_archive' => false,
+        'hierarchical' => true,
         'menu_position' => 11,
         'supports' => array('title', 'editor', 'taxonomy')
     );

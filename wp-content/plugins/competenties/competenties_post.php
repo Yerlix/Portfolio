@@ -12,8 +12,8 @@ function create_comp() {
         'query_var' => true,
         'rewrite' => true,
         'capability_type' => 'post',
-        'has_archive' => true,
-        'hierarchical' => false,
+        'has_archive' => false,
+        'hierarchical' => true,
         'menu_position' => 11,
         'supports' => array('title', 'editor')
     );
