@@ -88,7 +88,7 @@ function create_home_metaboxes(){
 			array(
 				'id'	=> "{$prefix}imgurls",
 				'name'	=> __( "Afbeeldings urls", 'rwmb' ),
-				'desc'	=> "In zelfde volgorde als de afbeeldingen",
+				'desc'	=> "In dezelfde volgorde als de afbeeldingen",
 				'type'	=> "text",
 				'clone' => true
 				),
