@@ -12,7 +12,7 @@
     <?php
         $i = 0;
         foreach ($images as $image) { ?>
-             <a href="<?php echo $links[$i]; ?>"><img src="<?php echo $image['full_url']; ?>" alt=""/></a>
+             <a href="<?php echo $links[$i]; ?>" target="_blanc"><img src="<?php echo $image['full_url']; ?>" alt=""/></a>
              <?php $i++; ?>
        <?php } ?>
     </div>

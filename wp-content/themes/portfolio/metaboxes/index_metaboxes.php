@@ -91,41 +91,7 @@ function create_home_metaboxes(){
 				'desc'	=> "In dezelfde volgorde als de afbeeldingen",
 				'type'	=> "text",
 				'clone' => true
-				),
-			// HEADING
-            array(
-                'type' => 'heading',
-                'name' => __( 'Hobby\'s', 'rwmb' ),
-                'id'   => 'heading_hobby', // Not used but needed for plugin
-            ),
-			array(
-				'id'		=> "{$prefix}hobbytitle",
-				'name'	=> __( "Hobby Title", 'rwmb' ),
-				'type'	=> "text",
-				),
-			// IMAGE UPLOAD
-            array(
-                'name' => __( 'Image', 'rwmb' ),
-                'id'   => "{$prefix}hobbyimg",
-                'type' => 'plupload_image',
-                'max_file_uploads' => 1,
-            ),
-			// WYSIWYG/RICH TEXT EDITOR
-            array(
-                'name' => __( 'Hobby content', 'rwmb' ),
-                'id'   => "{$prefix}hobbycontent",
-                'type' => 'wysiwyg',
-                // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
-                'raw'  => false,
-                'std'  => __( '', 'rwmb' ),
-
-                // Editor settings, see wp_editor() function: look4wp.com/wp_editor
-                'options' => array(
-                    'textarea_rows' => 20,
-                    'teeny'         => false,
-                    'media_buttons' => false,
-                ),
-            ),
+			),
 		),
 	);
 
@@ -176,9 +142,49 @@ function create_home_metaboxes(){
 				'name'	=> __( "Image text", 'rwmb' ),
 				'type'	=> "text",
 				'desc'	=> 'Text under the image'
-				),
+			),
 		),
 	);
+
+	$meta_boxes[] = array(
+		'id' => 'hobbys',
+	    'title' => __( 'Hobby\'s Fields', 'rwmb' ),
+	    'pages' => array( 'post', 'page' ),
+	    'context' => 'normal',
+	    'priority' => 'high',
+	    'autosave' => true,
+		'fields' => array(
+			array(
+				'id'		=> "{$prefix}hobbytitle",
+				'name'	=> __( "Hobby Title", 'rwmb' ),
+				'type'	=> "text",
+				),
+			// IMAGE UPLOAD
+            array(
+                'name' => __( 'Image', 'rwmb' ),
+                'id'   => "{$prefix}hobbyimg",
+                'type' => 'plupload_image',
+                'max_file_uploads' => 1,
+            ),
+			// WYSIWYG/RICH TEXT EDITOR
+            array(
+                'name' => __( 'Hobby content', 'rwmb' ),
+                'id'   => "{$prefix}hobbycontent",
+                'type' => 'wysiwyg',
+                // Set the 'raw' parameter to TRUE to prevent data being passed through wpautop() on save
+                'raw'  => false,
+                'std'  => __( '', 'rwmb' ),
+
+                // Editor settings, see wp_editor() function: look4wp.com/wp_editor
+                'options' => array(
+                    'textarea_rows' => 20,
+                    'teeny'         => false,
+                    'media_buttons' => false,
+                ),
+            ),
+		),
+	);
+
 
 	return $meta_boxes;
 }
