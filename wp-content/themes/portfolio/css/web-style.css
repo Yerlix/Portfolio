@@ -401,7 +401,7 @@ hr{
 .nivoSlider {
 	position:relative;
 	height:300px;
-	/*background:url(images/slider/loading.gif) no-repeat 50% 50%; */
+	background:url(images/slider/loading.gif) no-repeat 50% 50%; 
 }
 .nivoSlider img {
 	max-width:100%;
