@@ -1,18 +1,20 @@
 <?php
     // Get the slider images
     $images = rwmb_meta( 'yer_slideimgs', 'type=plupload_image' );
-?><!-- Start Slider Wrapping -->
+    $links = rwmb_meta( 'yer_imgurls');
+?>
+
+<!-- Start Slider Wrapping -->
 <div id="sliderwrap">
 	
     <!-- Start Slider -->
     <div id="slider" class="nivoSlider">
     <?php
+        $i = 0;
         foreach ($images as $image) { ?>
-             <a href="#"><img src="<?php echo $image['full_url']; ?>" alt=""/></a>
-       <?php } ?><!-- 
-        <a href="#"><img src="<?php echo THEME_URL; ?>/images/slider-banners/slider01.jpg" alt=""/></a>
-        <a href="#"><img src="<?php echo THEME_URL; ?>/images/slider-banners/slider02.jpg" alt=""/></a>
-        <a href="#"><img src="<?php echo THEME_URL; ?>/images/slider-banners/slider03.jpg" alt=""/></a> -->
+             <a href="<?php echo $links[$i]; ?>"><img src="<?php echo $image['full_url']; ?>" alt=""/></a>
+             <?php $i++; ?>
+       <?php } ?>
     </div>
     <!-- End Slider -->
     <!-- Start Slider HTML Captions -->
