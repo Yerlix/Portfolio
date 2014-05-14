@@ -25,8 +25,6 @@
 ?> 
 <?php wp_reset_postdata(); ?>
 
-<!-- <?php var_dump($categories); ?> -->
-
 <!-- Start Box -->
 <div class="boxes-full">
     <div class="boxes-padding fullpadding">
@@ -78,7 +76,7 @@
                     
                     <!-- classes worden dynamisch bijgevoegd als ze tot een categorie behoren -->
                     <!-- Daarna afbeelding tonen en gegevens plaatsen zoals de url naar het project -->
-                    <div class="element2 isotope-item portHeight <?php foreach($cats as $cat) { echo $cat['slug'] . ' '; } $categorie; ?>">
+                    <div class="element2 isotope-item <?php foreach($cats as $cat) { echo $cat['slug'] . ' '; } $categorie; ?>">
                         <div class="portfoliowrap">
                             <div class="title"><?php echo $value->post_title; ?><span class="titlearrow"></span></div>
                             <div class="portfolioimage">

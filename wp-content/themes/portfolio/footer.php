@@ -71,9 +71,6 @@
 				$(".kennisHeight").eqHeight();
 				$(".expHeight").eqHeight();
 				$(".variaHeight").eqHeight();
-
-				// portfolio
-				$(".portHeight").eqHeight();
 			}	
 		</script>
 	</body>
