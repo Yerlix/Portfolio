@@ -90,6 +90,14 @@
 		<div class="clear"></div>
 		<!-- Start Social & Logo area -->
 		<div id="header_small">
+			<!-- Start Download button on CV -->
+				<?php if (get_page_template_slug() === "page-cv.php"){ ?>
+					<div id="downloadCV">
+						<a class="smallsmoothrectange orangebutton" id="downloadCV" href="#" title="">Print CV</a>
+					</div>		
+				<?php } ?>
+			<!-- End Download button on CV -->
+					
 			<!-- Start Social area -->
 			<div class="social">
 				<ul>
