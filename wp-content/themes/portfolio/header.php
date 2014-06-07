@@ -69,18 +69,18 @@
 
 <body>
 <div id="header">
-		<!-- Start Download button on CV -->
-			<?php if (get_page_template_slug() === "page-cv.php"){ ?>
-				<div id="downloadCV">
-					<a class="smallsmoothrectange orangebutton" id="downloadCV" href="#" title="">Print CV</a>
-				</div>		
-			<?php } ?>
-		<!-- End Download button on CV -->
 		<!-- Start navigation area -->
 		<div id="navigation">
 
 			<div id="navigation_wrap">
-
+				<!-- Start Download button on CV -->
+					<?php if (get_page_template_slug() === "page-cv.php"){ ?>
+						<div id="downloadCV">
+							<a class="smallsmoothrectange orangebutton" id="downloadCV" href="#" title="">Print CV</a>
+						</div>		
+					<?php } ?>
+				<!-- End Download button on CV -->
+				
 				<!-- Start contact info area -->
 				<!-- <div id="conteactinfo"><strong>Email:</strong> info@domainname.com  |  <strong>Phone:</strong> (+44) 1234 567 890</div> -->
 				<!-- End contact info area -->
