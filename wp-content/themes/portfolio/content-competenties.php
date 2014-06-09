@@ -44,6 +44,33 @@
             <hr />
             <div class="splitnone">
                 <h3><?php if (yer_get_meta('compsoft')) echo yer_get_meta('compsoft'); ?></h3>
+
+                <!-- Start Toggle Hardskills -->
+            <div class="splitnone">
+                <h3><?php if (yer_get_meta('comphard')) echo yer_get_meta('comphard'); ?></h3>
+                
+                <?php if (count($hardskills) > 0) { ?>
+                    <div class="togglewrap">
+                        <?php foreach ($hardskills as $skill) { ?>
+                            <div class="toggletitle"><a><?php echo $skill->post_title; ?></a></div>
+                            <div class="togglecontent compbody">
+                                <p>
+                                    <?php echo $skill->post_content; ?>
+                                </p>
+                                <h3>Bewijzen</h3>
+
+                                <!-- ophalen bewijzen -->
+                                <?php $bewijzen = rwmb_meta('yer_bewijzen', 'type=file_advanced', $skill->ID); ?>
+                                <ul>
+                                    <?php foreach ($bewijzen as $bewijs) { ?>
+                                        <li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
+                                    <?php } ?>                                    
+                                </ul>
+                            </div>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
+                <!-- End Toggle Hardskills-->           
                 
                 <!-- Start Toggle Softskills -->
                 <?php if (count($softskills) > 0) { ?>
@@ -71,33 +98,6 @@
             </div>
             <div class="clear"></div>
             <hr />
-
-            <!-- Start Toggle Hardskills -->
-            <div class="splitnone">
-                <h3><?php if (yer_get_meta('comphard')) echo yer_get_meta('comphard'); ?></h3>
-                
-                <?php if (count($hardskills) > 0) { ?>
-                    <div class="togglewrap">
-                        <?php foreach ($hardskills as $skill) { ?>
-                            <div class="toggletitle"><a><?php echo $skill->post_title; ?></a></div>
-                            <div class="togglecontent compbody">
-                                <p>
-                                    <?php echo $skill->post_content; ?>
-                                </p>
-                                <h3>Bewijzen</h3>
-
-                                <!-- ophalen bewijzen -->
-                                <?php $bewijzen = rwmb_meta('yer_bewijzen', 'type=file_advanced', $skill->ID); ?>
-                                <ul>
-                                    <?php foreach ($bewijzen as $bewijs) { ?>
-                                        <li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
-                                    <?php } ?>                                    
-                                </ul>
-                            </div>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
-                <!-- End Toggle Hardskills-->           
             </div>
             <!-- End None Split Section -->
 
