@@ -26,7 +26,7 @@ function com_register_meta_boxes()
 				'name' => __( 'Bewijzen', 'rwmb' ),
 				'id'   => $prefix . 'bewijzen',
 				'type' => 'file_advanced',
-				'max_file_uploads' => 4,
+				'max_file_uploads' => 8,
 			),
 			// CHECKBOX LIST
             array(
