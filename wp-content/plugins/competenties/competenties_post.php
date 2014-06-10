@@ -15,7 +15,7 @@ function create_comp() {
         'has_archive' => false,
         'hierarchical' => true,
         'menu_position' => 11,
-        'supports' => array('title', 'editor')
+        'supports' => array('title')
     );
 
     register_post_type( 'competentie', $args );
