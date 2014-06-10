@@ -70,25 +70,14 @@
 										if (!empty($bewijzen) || !empty($uitleg)){
 											foreach ($bewijzen as $bewijs) { ?>
 												<li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
-											<?php }
+											<?php } ?>
 
-											// foreach ($uitleg as $info) { ?>
-												<p class="paddingleft"><?php echo $uitleg; ?></p>
-											<?php //}
-										} else {
+											<div class="paddingleft"><?php echo $uitleg; ?></div>
+
+										<?php } else {
 											break;
 										}
 									}?>
-								</ul>
-								
-								<h3>Bewijzen</h3>
-
-								<!-- ophalen bewijzen -->
-								<?php $bewijzen = rwmb_meta('yer_bewijzen', 'type=file_advanced', $skill->ID); ?>
-								<ul>
-									<?php foreach ($bewijzen as $bewijs) { ?>
-										<li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
-									<?php } ?>                                    
 								</ul>
 							</div>
 						<?php } ?>
@@ -133,16 +122,6 @@
 											break;
 										}
 									}?>
-								</ul>
-
-								<h3>Bewijzen</h3>
-
-								<!-- ophalen bewijzen -->
-								<?php $bewijzen = rwmb_meta('yer_bewijzen', 'type=file_advanced', $skill->ID); ?>
-								<ul>
-									<?php foreach ($bewijzen as $bewijs) { ?>
-										<li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
-									<?php } ?>                                    
 								</ul>
 							</div>
 						<?php } ?>
