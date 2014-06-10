@@ -125,12 +125,11 @@
 										if (!empty($bewijzen) || !empty($uitleg)){
 											foreach ($bewijzen as $bewijs) { ?>
 												<li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
-											<?php }
+											<?php } ?>
 
-											// foreach ($uitleg as $info) { ?>
-												<p class="paddingleft"><?php echo $uitleg; ?></p>
-											<?php //}
-										} else {
+												<div class="paddingleft"><?php echo $uitleg; ?></div>
+
+										<?php } else {
 											break;
 										}
 									}?>
