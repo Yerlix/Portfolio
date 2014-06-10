@@ -42,21 +42,26 @@ function com_register_meta_boxes()
 	// 1st meta box
 	for($i = 1; $i<=5; $i++){
 		$meta_boxes[] = array(
-		'id'    => 'bewijs' . $i,
-		'title' => __( 'Bewijs' . $i, 'rwmb' ),
-		'pages' => $post_types,
+			'id'    => 'bewijs' . $i,
+			'title' => __( 'Bewijs' . $i, 'rwmb' ),
+			'pages' => $post_types,
 
-		'fields' => array(
-			array(
-				'name' => __( 'Bewijs ' . $i, 'rwmb' ),
-				'id'   => $prefix . 'bewijs' . $i,
-				'type' => 'file_advanced',
-				'max_file_uploads' => 8,
-			),
-			array(
-				'name' => __( 'Uitleg ' . $i, 'rwmb' ),
-				'id'   => $prefix . 'uitleg' . $i,
-				'type' => 'textarea',
+			'fields' => array(
+				array(
+					'name' => __( 'Bewijs ' . $i, 'rwmb' ),
+					'id'   => $prefix . 'bewijs' . $i,
+					'type' => 'file_advanced',
+					'max_file_uploads' => 8,
+				),
+				array(
+					'name' => __( 'Uitleg ' . $i, 'rwmb' ),
+					'id'   => $prefix . 'uitleg' . $i,
+					'type' => 'wysiwyg',
+					'options' => array(
+						'textarea_rows' => 10,
+						'teeny'         => true,
+						'media_buttons' => false,
+					),
 				),
 			)
 		);

@@ -57,7 +57,7 @@
 
 								<h3>Behaald niveau</h3>
 								<p>
-								Voor de competentie "<?php echo $skill->post_title; ?>" heb ik niveau <?php echo rwmb_meta('yer_niveau', 'type=number', $skill->ID); ?> behaald. Hiervoor gebruik ikverschillende bewijsstukken uit het 2e en 3e jaar uit mijn opleiding, maar ook bewijzen uit mijn stage.
+								Voor de competentie "<?php echo substr($skill->post_title, 3) ?>" heb ik niveau <?php echo rwmb_meta('yer_niveau', 'type=number', $skill->ID); ?> behaald. Hiervoor gebruik ikverschillende bewijsstukken uit het 2e en 3e jaar uit mijn opleiding, maar ook bewijzen uit mijn stage.
 								</p>
 
 								<h3>Verantwoording</h3>
@@ -106,11 +106,13 @@
 							<div class="toggletitle"><a><?php echo $skill->post_title; ?></a></div>
 							<div class="togglecontent compbody">
 								<h3>Doelstelling</h3>
-								<?php echo rwmb_meta('yer_doelstelling', 'type=textarea', $skill->ID); ?>
+								<p>
+									<?php echo rwmb_meta('yer_doelstelling', 'type=textarea', $skill->ID); ?>
+								</p>
 
 								<h3>Behaald niveau</h3>
 								<p>
-								Voor de competentie "<?php echo $skill->post_title; ?>" heb ik niveau <?php echo rwmb_meta('yer_niveau', 'type=number', $skill->ID); ?> behaald. Hiervoor gebruik ikverschillende bewijsstukken uit het 2e en 3e jaar uit mijn opleiding, maar ook bewijzen uit mijn stage.
+								Voor de competentie "<?php echo substr($skill->post_title, 3) ?>" heb ik niveau <?php echo rwmb_meta('yer_niveau', 'type=number', $skill->ID); ?> behaald. Hiervoor gebruik ikverschillende bewijsstukken uit het 2e en 3e jaar uit mijn opleiding, maar ook bewijzen uit mijn stage.
 								</p>
 
 								<h3>Verantwoording</h3>
@@ -133,7 +135,7 @@
 										}
 									}?>
 								</ul>
-								
+
 								<h3>Bewijzen</h3>
 
 								<!-- ophalen bewijzen -->
