@@ -52,6 +52,9 @@
 						<?php foreach ($hardskills as $skill) { ?>
 							<div class="toggletitle"><a><?php echo $skill->post_title; ?></a></div>
 							<div class="togglecontent compbody">
+								<h3>Doelstelling</h3>
+								<?php echo rwmb_meta('yer_doelstelling', 'type=textarea', $skill->ID); ?>
+
 								<p>
 									<?php echo $skill->post_content; ?>
 								</p>
@@ -79,9 +82,35 @@
 						<?php foreach ($softskills as $skill) { ?>
 							<div class="toggletitle"><a><?php echo $skill->post_title; ?></a></div>
 							<div class="togglecontent compbody">
+								<h3>Doelstelling</h3>
+								<?php echo rwmb_meta('yer_doelstelling', 'type=textarea', $skill->ID); ?>
+
+								<h3>Behaald niveau</h3>
 								<p>
-									<?php echo $skill->post_content; ?>
+								Voor de competentie "<?php echo $skill->post_title; ?>" heb ik niveau <?php echo rwmb_meta('yer_niveau', 'type=number', $skill->ID); ?> behaald. Hiervoor gebruik ikverschillende bewijsstukken uit het 2e en 3e jaar uit mijn opleiding, maar ook bewijzen uit mijn stage.
 								</p>
+
+								<h3>Verantwoording</h3>
+								<!-- ophalen bewijzen -->
+								<ul>
+									<?php for($i = 1;$i<=5; $i++){
+										$bewijzen = rwmb_meta('yer_bewijs' . $i, 'type=file_advanced', $skill->ID);
+										$uitleg = rwmb_meta('yer_uitleg' . $i, 'type=textarea', $skill->ID);
+										// var_dump($bewijzen);
+										if (!empty($bewijzen) || !empty($uitleg)){
+											foreach ($bewijzen as $bewijs) { ?>
+												<li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
+											<?php }
+
+											// foreach ($uitleg as $info) { ?>
+												<p class="paddingleft"><?php echo $uitleg; ?></p>
+											<?php //}
+										} else {
+											break;
+										}
+									}?>
+								</ul>
+								
 								<h3>Bewijzen</h3>
 
 								<!-- ophalen bewijzen -->

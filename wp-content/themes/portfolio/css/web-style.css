@@ -2749,6 +2749,10 @@ textarea.contacttextarea{
 	cursor: default;
 }
 
+p.paddingleft{
+	padding-left: 28px;
+}
+
 /**********************************************/
 /*********** Pagination Section ***************/
 /**********************************************/

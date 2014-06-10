@@ -15,8 +15,32 @@ function com_register_meta_boxes()
 	);
 	$post_types = get_post_types($args);
 
+	// Doelstelling
+	$meta_boxes[] = array(
+		'id'    => 'info',
+		'title' => __( 'Info', 'rwmb' ),
+		'pages' => $post_types,
+
+		'fields' => array(
+			// CHECKBOX LIST
+			array(
+				'name' => __( 'Doelstelling', 'rwmb' ),
+				'id'   => "{$prefix}doelstelling",
+				'type' => 'textarea',
+			),
+			array(
+				'name' => __( 'Behaald niveau', 'rwmb' ),
+				'id'   => "{$prefix}niveau",
+				'type' => 'number',
+				'min'  => 0,
+	             'step' => 1,
+	             'std' => 3,
+			),
+		)
+	);
+
 	// 1st meta box
-	for(int $i = 0; $i<5; $i++){
+	for($i = 1; $i<=5; $i++){
 		$meta_boxes[] = array(
 		'id'    => 'bewijs' . $i,
 		'title' => __( 'Bewijs' . $i, 'rwmb' ),
@@ -45,6 +69,12 @@ function com_register_meta_boxes()
 		'pages' => $post_types,
 
 		'fields' => array(
+			array(
+				'name' => __( 'Bewijzen', 'rwmb' ),
+				'id'   => $prefix . 'bewijzen',
+				'type' => 'file_advanced',
+				'max_file_uploads' => 8,
+			),
 			// CHECKBOX LIST
 			array(
 				'name' => __( 'Soft or hard skill', 'rwmb' ),
