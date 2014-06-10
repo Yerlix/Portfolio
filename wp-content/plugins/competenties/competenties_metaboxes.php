@@ -16,7 +16,7 @@ function com_register_meta_boxes()
 	$post_types = get_post_types($args);
 
 	// 1st meta box
-	for(int $i = 0; i<5; i++){
+	for(int $i = 0; i<5; i++;){
 		$meta_boxes[] = array(
 		'id'    => 'bewijs' . $i,
 		'title' => __( 'Bewijs' . $i, 'rwmb' ),
