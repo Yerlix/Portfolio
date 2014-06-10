@@ -53,8 +53,10 @@
 							<div class="toggletitle"><a><?php echo $skill->post_title; ?></a></div>
 							<div class="togglecontent compbody">
 								<h3>Doelstelling</h3>
-								<?php echo rwmb_meta('yer_doelstelling', 'type=textarea', $skill->ID); ?>
-
+								<p>
+									<?php echo rwmb_meta('yer_doelstelling', 'type=textarea', $skill->ID); ?>
+								</p>
+								
 								<h3>Behaald niveau</h3>
 								<p>
 								Voor de competentie "<?php echo substr($skill->post_title, 3) ?>" heb ik niveau <?php echo rwmb_meta('yer_niveau', 'type=number', $skill->ID); ?> behaald. Hiervoor gebruik ikverschillende bewijsstukken uit het 2e en 3e jaar uit mijn opleiding, maar ook bewijzen uit mijn stage.
@@ -110,7 +112,6 @@
 									<?php for($i = 1;$i<=5; $i++){
 										$bewijzen = rwmb_meta('yer_bewijs' . $i, 'type=file_advanced', $skill->ID);
 										$uitleg = rwmb_meta('yer_uitleg' . $i, 'type=textarea', $skill->ID);
-										// var_dump($bewijzen);
 										if (!empty($bewijzen) || !empty($uitleg)){
 											foreach ($bewijzen as $bewijs) { ?>
 												<li class="compLabel"><a href="<?php echo $bewijs['url']; ?>" target="_blanc"><?php echo $bewijs['name']; ?></a></li>
