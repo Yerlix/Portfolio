@@ -683,6 +683,10 @@ hr{
 	font-size:12pt;
 }
 
+.featured-text a{
+	color: #d25809;
+}
+
 /* About Section*/
 .about-images{
 	width:30%;
