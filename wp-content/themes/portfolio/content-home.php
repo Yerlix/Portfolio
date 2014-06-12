@@ -16,7 +16,7 @@
             $images[] = $image;
         }
         ?>
-        <div class="boxes-full">
+        <div class="boxes-full" id="overmezelf">
             <div class="boxes-padding">
                 <div class="bti">
                     <div class="about-images printhide"><img src="<?php echo $images[0]['full_url']; ?>" alt="<?php echo $images[0]['alt']; ?>"></div>
