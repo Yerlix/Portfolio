@@ -119,6 +119,7 @@
 											<?php } ?>
 
 												<div class="paddingleft"><?php echo $uitleg; ?></div>
+												<hr />
 
 										<?php } else {
 											break;
